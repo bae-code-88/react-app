@@ -1,0 +1,23 @@
+{   "Start":"Home",
+    "Oferta":"Offer",
+    "Zapytanie":"Inquiry",
+    "Realizacje":"Realization",
+    "Zespół":"Team",
+    "Kariera":"Career",
+    "Kontakt":"Contact",
+
+    "LiteraZespół":"T",
+    "LiteraKariera":"C",
+
+    "Ofertatxt":"We deal with comprehensive implementation of residential interiors and services, taking into account functional solutions and the latest design trends",
+    "Realizacjetxt":"We implement both private and commercial projects, in each case, focusing on original solutions in line with the latest trends.We invite you to see the gallery of our interiors.",
+
+    "Zespółtxt": "Team of experienced architects, PRW Design specializes in comprehensive implementation of both private and public interiors. At every stage of activities - from the first versions of the design to the last touches of the finish - we use original solutions of the highest functional and aesthetic quality, in line with the needs of customers and the latest interior trends.",
+
+    "Karieratxt":"We are constantly looking for new talents for our team. Do you want to try? Apply!",
+
+    "HomeWprowadzenie":"THIS IS IMPORTANT TO US",
+    "HomeHeadline":"We make sure that our interiors are not only beautiful, but above all thoughtful and functional.",
+    "HomeText":"We implement both residential and office projects. We value originality, use of modern trends, and our priority is to understand the client's needs in order to create spaces in which you want to stay.",
+    "HomeButtonOffer":"Check the Offer"
+}

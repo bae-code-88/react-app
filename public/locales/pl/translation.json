@@ -1,0 +1,21 @@
+{   "Start":"Start",
+    "Oferta":"Oferta",
+    "Zapytanie":"Zapytanie",
+    "Realizacje":"Realizacje",
+    "Zespół":"Zespół",
+    "Kariera":"Kariera",
+    "Kontakt":"Kontakt",
+
+    "LiteraZespół":"Z",
+    "LiteraKariera":"K",
+
+    "Ofertatxt":"Zajmujemy się kompleksową realizacją wnętrz mieszkalnych i usługowych z uwzględnieniem funkcjonalnych rozwiązań i najnowszysch trendów wzorniczych",
+    "Realizacjetxt":"Realizujemy zarówno projekty prywatne, jak i komercyjne, w każdym porzypadku stawiając na oryginalne rozwiązania zgodne z najnowszymi trendami. Zapraszamy do zapoznania się z galerią naszych wnętrz.",
+    "Zespółtxt": "Zespół doświadczonych architektów PRW Design specjalizuje się w kompleksowej realizacji wnętrz zarówno prywatnych, jak i użyteczności publicznej. Na każdym etapie działań – od pierwszych wersji projektu po ostatnie szlify wykończenia – stosujemy oryginalne rozwiązania o najwyższej jakości funkcjonalnej i estetycznej, pozostające w zgodzie z potrzebami klientów oraz najnowszymi tendencjami wnętrzarskimi.",
+    "Karieratxt":" Cały czas szukamy nowych talentów do naszego zespołu.Chcesz spróbować? Aplikuj !",
+
+    "HomeWprowadzenie":"TO DLA NAS WAŻNE",
+    "HomeHeadline":"Dbamy, aby nasze wnętrza były nie tylko piękne, ale przede wszystkim przemyślane i funkcjonalne.",
+    "HomeText":"Realizujemy projekty zarówno mieszkalne, jak i biurowe. Cenimy oryginalność, wykorzystanie nowoczesnych trendów, a naszym priorytetem jest zrozumienie potrzeb Klienta, by tworzyć przestrzenie, w których chce się przebywać.",
+    "HomeButtonOffer":"Sprawdź ofertę"
+}
