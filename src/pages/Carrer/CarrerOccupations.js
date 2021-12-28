@@ -90,6 +90,7 @@ const Occupations = () => {
       {occupations.map((item, index) => (
         <CarrerArticleBox
           key={item.id}
+          id={item.id}
           isTextOpen={isTextOpen}
           isActive={isActive}
         >
