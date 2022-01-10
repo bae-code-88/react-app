@@ -19,15 +19,9 @@ import {
   IconInstagram,
   IconsMediaBox,
   ContactRightContainer,
-  ContactFormBox,
-  ContactFormInput,
-  ContactMessageBox,
-  ContactFormBoxTitle,
-  ContactFormBoxText,
-  ContactFormButton,
   ContactMapPlace,
 } from "./ContactElements";
-
+import ContactForm from "./ContactForm";
 import ContactMap from "./ContactMap";
 
 const Contact = () => {
@@ -43,7 +37,7 @@ const Contact = () => {
           </ContactMainInfo>
           <ContactIcons>
             <ContactIconBox>
-              <ContactIconPhone />+ 48 793 033 088
+              <ContactIconPhone />+ 48 700 000 000
             </ContactIconBox>
             <ContactIconBox>
               <ContactIconMail />
@@ -68,23 +62,7 @@ const Contact = () => {
           </IconsMediaBox>
         </ContactLeftContainer>
         <ContactRightContainer>
-          <ContactFormBoxTitle>Zostaw wiadomość</ContactFormBoxTitle>
-          <ContactFormBoxText>Czekamy na Twoją wiadomość.</ContactFormBoxText>
-          <ContactFormBox name="contact">
-            <ContactFormInput placeholder="Imię i nazwisko"></ContactFormInput>
-            <ContactFormInput placeholder="Telefon"></ContactFormInput>
-            <ContactFormInput
-              type="email"
-              placeholder="E-mail"
-            ></ContactFormInput>
-            <ContactMessageBox
-              name="contact"
-              placeholder="Wiadomość"
-              rows="5"
-              cols="60"
-            ></ContactMessageBox>
-            <ContactFormButton>Wyślij</ContactFormButton>
-          </ContactFormBox>
+          <ContactForm />
         </ContactRightContainer>
         <ContactMapPlace>
           <ContactMap />

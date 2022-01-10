@@ -1,23 +1,25 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
 
 const Mapa = () => {
+  const position = [52.211282, 21.147641];
+
   return (
-    <div id="map" style={{ height: "100%" }}>
+    <>
       <MapContainer
-        center={[52.211282, 21.147641]}
-        zoom={13}
+        center={position}
+        zoom={16}
         scrollWheelZoom={true}
+        style={{ height: "70%", width: "100%" }}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={[52.211282, 21.147641]}>
+        <Marker position={position}>
           <Popup>Tutaj Jesteśmy!</Popup>
         </Marker>
       </MapContainer>
-    </div>
+    </>
   );
 };
 export default Mapa;

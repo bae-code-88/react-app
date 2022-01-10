@@ -30,6 +30,9 @@ export const ContactLeftContainer = styled.div`
   @media screen and (max-width: 1280px) {
     width: 100%;
   }
+  @media screen and (max-width: 1024px) {
+    height: 150%;
+  }
 `;
 
 export const ContactStyledLetter = styled.h1`
@@ -78,19 +81,14 @@ export const ContactMainIntro = styled.h1`
     font-size: 4rem;
   }
   @media screen and (max-width: 1024px) {
-    top: 130%;
+    top: 10%;
     font-size: 3rem;
   }
-  @media screen and (max-width: 800px) {
-    top: 65%;
-  }
-
   @media screen and (max-width: 640px) {
-    top: 120%;
+    top: 30vh;
   }
-
   @media screen and (max-width: 360px) {
-    top: 50%;
+    top: 20vh;
   }
 `;
 
@@ -108,25 +106,25 @@ export const ContactMainInfo = styled.p`
     font-size: 18px;
   }
   @media screen and (max-width: 1280px) {
-    width: 28%;
+    width: 45%;
   }
 
   @media screen and (max-width: 1024px) {
     width: 55%;
-    top: 115vh;
   }
   @media screen and (max-width: 800px) {
     width: 80%;
-    top: 75%;
   }
   @media screen and (max-width: 640px) {
-    width: 80%;
-    top: 150%;
+    width: 70%;
+    top: 45vh;
+    line-height: 25px;
   }
 
   @media screen and (max-width: 360px) {
-    top: 65%;
     font-size: 16px;
+    top: 35vh;
+    width: 80%;
   }
 `;
 
@@ -139,11 +137,18 @@ export const ContactIcons = styled.div`
   align-items: center;
   font-size: 18px;
 
+  @media screen and (max-width: 1024px) {
+    top: 35%;
+  }
   @media screen and (max-width: 785px) {
     margin-left: 0;
   }
-  @media screen and (max-width: 1246px) {
-    margin-top: 20px;
+  @media screen and (max-width: 640px) {
+    top: 70vh;
+  }
+  @media screen and (max-width: 360px) {
+    top: 55vh;
+    flex-wrap: wrap;
   }
 `;
 
@@ -155,13 +160,16 @@ export const ContactIconBox = styled.div`
 
   &:nth-child(2) {
     margin-left: 1rem;
+    @media screen and (max-width: 360px) {
+      margin-left: 0;
+    }
   }
 
-  @media screen and (max-width: 785px) {
-    margin-left: 0;
-  }
   @media screen and (max-width: 1246px) {
     margin-top: 20px;
+  }
+  @media screen and (max-width: 785px) {
+    margin-left: 0;
   }
 `;
 export const ContactIconPhone = styled(FaPhoneAlt)`
@@ -184,12 +192,18 @@ export const ContactTitleAdress = styled.p`
   color: #a85f3f;
   font-size: 14px;
   align-self: flex-start;
+  @media screen and (max-width: 640px) {
+    top: 90vh;
+  }
 `;
 export const ContactAdress = styled.p`
   position: absolute;
   top: 55%;
   left: 10%;
   font-size: 14px;
+  @media screen and (max-width: 640px) {
+    top: 95vh;
+  }
 `;
 
 export const RegisterInformationTitle = styled.p`
@@ -198,6 +212,9 @@ export const RegisterInformationTitle = styled.p`
   left: 10%;
   font-size: 14px;
   color: #a85f3f;
+  @media screen and (max-width: 640px) {
+    top: 105vh;
+  }
 `;
 
 export const RegisterInformationName = styled.p`
@@ -205,6 +222,9 @@ export const RegisterInformationName = styled.p`
   top: 70%;
   left: 10%;
   font-size: 14px;
+  @media screen and (max-width: 640px) {
+    top: 110vh;
+  }
 `;
 
 export const RegisterInformationAdress = styled.p`
@@ -212,6 +232,9 @@ export const RegisterInformationAdress = styled.p`
   top: 75%;
   left: 10%;
   font-size: 14px;
+  @media screen and (max-width: 640px) {
+    top: 115vh;
+  }
 `;
 
 export const RegisterInformationNumbers = styled.p`
@@ -219,6 +242,9 @@ export const RegisterInformationNumbers = styled.p`
   top: 80%;
   left: 10%;
   font-size: 14px;
+  @media screen and (max-width: 640px) {
+    top: 120vh;
+  }
 `;
 
 export const RegisterAccountNumber = styled.p`
@@ -226,6 +252,9 @@ export const RegisterAccountNumber = styled.p`
   top: 85%;
   left: 10%;
   font-size: 14px;
+  @media screen and (max-width: 640px) {
+    top: 130vh;
+  }
 `;
 
 export const IconsMediaBox = styled.div`
@@ -238,6 +267,9 @@ export const IconsMediaBox = styled.div`
   flex-direction: row;
   justify-items: space-between;
   font-size: 14px;
+  @media screen and (max-width: 640px) {
+    top: 135vh;
+  }
 `;
 export const IconFacebook = styled(FaFacebookF)`
   display: block;
@@ -267,6 +299,13 @@ export const ContactRightContainer = styled.div`
 
   @media screen and (max-width: 1280px) {
     width: 100%;
+    top: 65vh;
+  }
+  @media screen and (max-width: 1024px) {
+    top: 80vh;
+  }
+  @media screen and (max-width: 640px) {
+    top: 145vh;
   }
 `;
 
@@ -275,6 +314,12 @@ export const ContactFormBoxTitle = styled.p`
   font-size: 35px;
   width: 80%;
   margin: 10% 0 4% 0;
+  @media screen and (max-width: 640px) {
+    margin: 10% 0 0;
+  }
+  @media screen and (max-width: 360px) {
+    font-size: 30px;
+  }
 `;
 
 export const ContactFormBoxText = styled.p`
@@ -321,5 +366,22 @@ export const ContactMapPlace = styled.div`
   position: absolute;
   top: 100vh;
   width: 80%;
-  height: 120vh;
+  height: 100vh;
+  @media screen and (max-width: 1280px) {
+    top: 170vh;
+  }
+  @media screen and (max-width: 1024px) {
+    top: 180vh;
+  }
+  @media screen and (max-width: 800px) {
+    top: 150vh;
+  }
+  @media screen and (max-width: 640px) {
+    top: 310vh;
+    height: 150vh;
+  }
+  @media screen and (max-width: 360px) {
+    top: 230vh;
+    height: 100vh;
+  }
 `;
