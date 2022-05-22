@@ -144,6 +144,9 @@ export const Language = styled.button`
   background-color: transparent;
   border: none;
   text-decoration: none;
+  cursor: pointer;
+  height: 60px;
+  width: 45px;
 
   padding: 0.72rem;
   color: ${({ isActive }) => (isActive ? "#a85f3f" : "#1d1d1b")};

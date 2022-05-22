@@ -20,7 +20,7 @@ export const SidebarContainer = styled.aside`
 
   transition: 0.6s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-  top: ${({ isOpen }) => (isOpen ? "0" : "-200%")};
+  top: ${({ isOpen }) => (isOpen ? "0" : "-500%")};
 `;
 
 export const SidebarLogo = styled.h1`
