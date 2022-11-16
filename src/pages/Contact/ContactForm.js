@@ -45,7 +45,7 @@ const ContactForm = () => {
           placeholder="Telefon"
           name="user_phone"
         />
-        <ContactFormInput type="email" placeholder="E-mail" />
+        <ContactFormInput type="email" placeholder="E-mail" required />
         <ContactMessageBox
           type="text"
           name="message"

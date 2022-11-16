@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { styled } from "@mui/material/styles";
+import { styled, ThemeProvider } from "@mui/material/styles";
 import Stack from "@mui/material/Stack"; //overridable component
 import Box from "@mui/material/Box";
 import Stepper from "@mui/material/Stepper";
@@ -11,11 +11,10 @@ import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
-
 import StepConnector, {
   stepConnectorClasses,
 } from "@mui/material/StepConnector";
-
+import theme from "./InquiryThemeMedia";
 import {
   AiOutlineEuro,
   AiOutlineSchedule,
@@ -72,6 +71,7 @@ const ColorlibStepIconRoot = styled("div")(({ ownerState }) => ({
     justifyContent: "center",
     alignItems: "center",
   }),
+
   ...(ownerState.completed && {
     color: "#a85f3f",
     width: "60px",
@@ -230,218 +230,223 @@ export default function CustomizedSteppers() {
 
   return (
     <Stack spacing={6}>
-      <Stepper
-        alternativeLabel
-        orientation="vertical"
-        connector={<ColorlibConnector />}
-        nonlinear
-        activeStep={activeStep}
-        sx={{
-          maxWidth: "1300px",
-          fontFamily: "Usual",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        {steps.map((step, index) => (
-          <Step
-            key={step.label}
-            sx={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              marginTop: "40px",
-              marginLeft: "20px",
-            }}
-          >
-            <Box
+      <ThemeProvider theme={theme}>
+        <Stepper
+          alternativeLabel
+          orientation="vertical"
+          connector={<ColorlibConnector />}
+          // nonlinear
+          activeStep={activeStep}
+          sx={{
+            maxWidth: "1300px",
+            fontFamily: "Usual",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          {steps.map((step, index) => (
+            <Step
+              key={step.label}
               sx={{
                 display: "flex",
                 flexDirection: "row",
-                width: "100%",
-                justifyContent: "center",
                 alignItems: "center",
+                marginTop: "40px",
+                marginLeft: "20px",
               }}
             >
-              <StepLabel
+              <Box
                 sx={{
-                  width: "300px",
                   display: "flex",
+                  flexDirection: "row",
+                  width: "100%",
+                  justifyContent: "center",
                   alignItems: "center",
-                  borderLeft: "none",
-                }}
-                alternativeLabel
-                StepIconComponent={ColorlibStepIcon}
-                activeStep={activeStep}
-              >
-                <p
-                  alternativeLabel
-                  activeStep={activeStep}
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    color: "#efefef",
-                    fontSize: "80px",
-                    fontWeight: "bold",
-                  }}
-                >
-                  {step.id}
-                </p>
-                <p style={{ width: "100%" }}>{step.info}</p>
-              </StepLabel>
-              {activeStep === index ? (
-                <div
-                  activeStep={activeStep}
-                  style={{ borderBottom: "1px solid #a85f3f", width: "30px" }}
-                ></div>
-              ) : null}
-              <StepContent
-                sx={{
-                  height: "250px",
-                  display: "flex",
-                  alignItems: "center",
-                  borderLeft: "none",
                 }}
               >
-                <Typography
+                <StepLabel
                   sx={{
-                    fontFamily: "Usual",
-                    fontSize: "32px",
-                    width: "100%,",
+                    width: "300px",
+                    display: "flex",
+                    alignItems: "center",
+                    borderLeft: "none",
+                  }}
+                  alternativeLabel
+                  StepIconComponent={ColorlibStepIcon}
+                  activeStep={activeStep}
+                >
+                  <p
+                    alternativeLabel
+                    activeStep={activeStep}
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      color: "#efefef",
+                      fontSize: "80px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    {step.id}
+                  </p>
+                  <p style={{ width: "100%" }}>{step.info}</p>
+                </StepLabel>
+                {activeStep === index ? (
+                  <div
+                    activeStep={activeStep}
+                    style={{ borderBottom: "1px solid #a85f3f", width: "30px" }}
+                  ></div>
+                ) : null}
+                <StepContent
+                  sx={{
+                    height: "25vh",
+                    display: "flex",
+                    alignItems: "center",
+                    borderLeft: "none",
                   }}
                 >
-                  <Typography sx={{ fontFamily: "Usual", fontSize: "14px" }}>
-                    <span style={{ fontFamily: "Usual", letterSpacing: "1px" }}>
-                      KROK
-                    </span>{" "}
-                    <span
-                      style={{
-                        color: "#a85f3f",
-                        letterSpacing: "1px",
-                      }}
-                    >
-                      {step.label}
-                    </span>
+                  <Typography
+                    sx={{
+                      fontFamily: "Usual",
+                      fontSize: "32px",
+                      width: "100%,",
+                    }}
+                  >
+                    <Typography sx={{ fontFamily: "Usual", fontSize: "14px" }}>
+                      <span
+                        style={{letterSpacing: "1px" }}
+                      >
+                        KROK
+                      </span>{" "}
+                      <span
+                        style={{
+                          color: "#a85f3f",
+                          letterSpacing: "1px",
+                        }}
+                      >
+                        {step.label}
+                      </span>
+                    </Typography>
+                    {step.description}{" "}
+                    <span style={{ color: "#a85f3f" }}>*</span>
                   </Typography>
-                  {step.description} <span style={{ color: "#a85f3f" }}>*</span>
-                </Typography>
 
-                {step.id === 4 ? (
-                  <div>
-                    <CssTextField
-                      focused
-                      variant="outlined"
-                      id="validation-outlined-input"
-                      type="number"
-                      label="Metraż"
-                      maxRows={1}
-                      value={value}
-                      onChange={handleChange}
-                      sx={{
-                        width: "190px",
-                        mt: 2,
-                        mb: 2,
-                      }}
-                    />
-                  </div>
-                ) : null}
-                {step.id === 6 ? (
-                  <div>
-                    <CssTextField
-                      focused
-                      type="textarea"
-                      label="Oczekiwania"
-                      id="filled-multiline"
-                      multiline
-                      value={value}
-                      onChange={handleChange}
-                      variant="outlined"
-                      rows={2}
-                      cols={8}
-                      sx={{ width: "600px", mt: 3 }}
-                    />
-                  </div>
-                ) : null}
-                <Box sx={{ mb: 1 }}>
-                  <div>
-                    {step.buttons.map((button, index) => (
-                      <Button
+                  {step.id === 4 ? (
+                    <div>
+                      <CssTextField
+                        focused
                         variant="outlined"
-                        onClick={handleNext}
+                        id="validation-outlined-input"
+                        type="number"
+                        label="Metraż"
+                        maxRows={1}
+                        value={value}
+                        onChange={handleChange}
                         sx={{
-                          mr: 1,
-                          color: "#a85f3f",
-                          border: "1px solid #a85f3f",
-                          borderRadius: "0",
                           width: "190px",
-                          lineHeight: "30px",
-                          backgroundColor: "white",
-                          fontFamily: "Usual",
-                          fontSize: "14px",
-                          textTransform: "none",
-                        }}
-                      >
-                        {index === steps.length - 1 ? "Wyślij" : button}
-                      </Button>
-                    ))}
-                    {step.id === 5 ? (
-                      <div>
-                        <CssTextField
-                          focused
-                          type="number"
-                          label="Budżet"
-                          maxRows={1}
-                          value={value}
-                          onChange={handleChange}
-                          sx={{ width: "190px" }}
-                        />
-                      </div>
-                    ) : null}
-
-                    {step.id === 7 ? (
-                      <div>
-                        <CssTextField
-                          focused
-                          variant="outlined"
-                          id="validation-outlined-input"
-                          type="date"
-                          label="Termin"
-                          autoComplete
-                          maxRows={1}
-                          value={value}
-                          onChange={handleChange}
-                          sx={{ width: "190px" }}
-                        />
-                      </div>
-                    ) : null}
-                    <br></br>
-                    {index === 0 ? null : (
-                      <Button
-                        onClick={handleBack}
-                        sx={{
                           mt: 2,
-                          mr: 1,
-                          color: "#a85f3f",
-                          border: "1px solid #a85f3f",
-                          borderRadius: "0",
-                          width: "100px",
-                          lineHeight: "28px",
-                          backgroundColor: "white",
-                          fontFamily: "Usual",
-                          fontSize: "14px",
-                          textTransform: "none",
+                          mb: 2,
                         }}
-                      >
-                        Wróć
-                      </Button>
-                    )}
-                  </div>
-                </Box>
-              </StepContent>
-            </Box>
-          </Step>
-        ))}
-      </Stepper>
+                      />
+                    </div>
+                  ) : null}
+                  {step.id === 6 ? (
+                    <div>
+                      <CssTextField
+                        focused
+                        type="textarea"
+                        label="Oczekiwania"
+                        id="filled-multiline"
+                        multiline
+                        value={value}
+                        onChange={handleChange}
+                        variant="outlined"
+                        rows={2}
+                        cols={8}
+                        sx={{ width: "600px", mt: 3 }}
+                      />
+                    </div>
+                  ) : null}
+                  <Box sx={{ mb: 1 }}>
+                    <div>
+                      {step.buttons.map((button, index) => (
+                        <Button
+                          variant="outlined"
+                          onClick={handleNext}
+                          sx={{
+                            mr: 1,
+                            color: "#a85f3f",
+                            border: "1px solid #a85f3f",
+                            borderRadius: "0",
+                            width: "190px",
+                            lineHeight: "30px",
+                            backgroundColor: "white",
+                            fontFamily: "Usual",
+                            fontSize: "14px",
+                            textTransform: "none",
+                          }}
+                        >
+                          {index === steps.length - 1 ? "Wyślij" : button}
+                        </Button>
+                      ))}
+                      {step.id === 5 ? (
+                        <div>
+                          <CssTextField
+                            focused
+                            type="number"
+                            label="Budżet"
+                            maxRows={1}
+                            value={value}
+                            onChange={handleChange}
+                            sx={{ width: "190px" }}
+                          />
+                        </div>
+                      ) : null}
+
+                      {step.id === 7 ? (
+                        <div>
+                          <CssTextField
+                            focused
+                            variant="outlined"
+                            id="validation-outlined-input"
+                            type="date"
+                            label="Termin"
+                            autoComplete
+                            maxRows={1}
+                            value={value}
+                            onChange={handleChange}
+                            sx={{ width: "190px" }}
+                          />
+                        </div>
+                      ) : null}
+                      <br></br>
+                      {index === 0 ? null : (
+                        <Button
+                          onClick={handleBack}
+                          sx={{
+                            mt: 2,
+                            mr: 1,
+                            color: "#a85f3f",
+                            border: "1px solid #a85f3f",
+                            borderRadius: "0",
+                            width: "100px",
+                            lineHeight: "28px",
+                            backgroundColor: "white",
+                            fontFamily: "Usual",
+                            fontSize: "14px",
+                            textTransform: "none",
+                          }}
+                        >
+                          Wróć
+                        </Button>
+                      )}
+                    </div>
+                  </Box>
+                </StepContent>
+              </Box>
+            </Step>
+          ))}
+        </Stepper>
+      </ThemeProvider>
       {activeStep === steps.length && (
         <Paper square elevation={0} sx={{ p: 3, width: "100%" }}>
           <Box

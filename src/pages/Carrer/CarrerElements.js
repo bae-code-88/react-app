@@ -82,8 +82,8 @@ export const CarrerHeaderIntroduction = styled.h1`
     top: 120%;
   }
 
-  @media screen and (max-width: 360px) {
-    top: 50%;
+  @media screen and (max-width: 400px) {
+    top: 65%;
   }
 `;
 
@@ -117,9 +117,10 @@ export const CarrerHeaderText = styled.p`
     top: 150%;
   }
 
-  @media screen and (max-width: 360px) {
-    top: 65%;
-    font-size: 16px;
+  @media screen and (max-width: 400px) {
+    top: 75%;
+    font-size: 14px;
+    line-height: 17px;
   }
 `;
 
@@ -185,6 +186,9 @@ export const CarrerImageContainer = styled.div`
     width: 80%;
     height: 50%;
   }
+  @media screen and (max-width: 400px) {
+    top: 10vh;
+  }
 `;
 
 export const CarrerHeaderImage = styled.img`
@@ -216,7 +220,7 @@ export const CarrerSection = styled.div`
     top: 150vh;
     height: 300vh;
   }
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 400px) {
     top: 75vh;
     height: 200vh;
   }
@@ -234,7 +238,7 @@ export const CarrerSectionIntroduction = styled.p`
     top: 20vh;
     font-size: 16px;
   }
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 400px) {
     top: 0;
     font-size: 14px;
   }
@@ -257,9 +261,9 @@ export const CarrerArticleBox = styled.article`
     height: ${({ isTextOpen, isActive, id }) =>
       isTextOpen === id && isActive ? "300vh" : "45%"};
   }
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 400px) {
     height: ${({ isTextOpen, isActive, id }) =>
-      isTextOpen === id && isActive ? "150vh" : "45%"};
+      isTextOpen === id && isActive ? "160vh" : "45%"};
     margin-top: 2rem;
   }
 `;
@@ -275,6 +279,9 @@ export const CarrerTitle = styled.h1`
   @media screen and (max-width: 640px) {
     font-size: 1.8rem;
   }
+  @media screen and (max-width: 400px) {
+    font-size: 20px;
+  }
 `;
 
 export const CarrerIntroduction = styled.p`
@@ -284,6 +291,9 @@ export const CarrerIntroduction = styled.p`
   @media screen and (max-width: 640px) {
     font-size: 14px;
     width: 80%;
+  }
+  @media screen and (max-width: 400px) {
+    line-height: 17px;
   }
 `;
 
@@ -334,7 +344,7 @@ export const TextResponsibilities = styled.ul`
   height: 100%;
   margin-top: 10vh;
   margin-bottom: 5rem;
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 400px) {
     margin-top: 5vh;
     margin-bottom: 3rem;
   }
@@ -346,7 +356,7 @@ export const ResponsibilitiesList = styled.li`
   @media screen and (max-width: 640px) {
     height: 10vh;
   }
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 400px) {
     font-size: 14px;
     height: 7vh;
     width: 100%;

@@ -8,6 +8,7 @@ import {
   ContactIconBox,
   ContactIconPhone,
   ContactIconMail,
+  ContactAdressRegistersInformation,
   ContactTitleAdress,
   ContactAdress,
   RegisterInformationTitle,
@@ -35,6 +36,7 @@ const Contact = () => {
             Nasz zespół pozostaje do Twojej dyspozycji, skontaktuj się z nami
             <br></br>a znajdziemy idealne rozwiązanie.
           </ContactMainInfo>
+
           <ContactIcons>
             <ContactIconBox>
               <ContactIconPhone />+ 48 700 000 000
@@ -44,23 +46,29 @@ const Contact = () => {
               kontakt@kontaktdesign.pl
             </ContactIconBox>
           </ContactIcons>
-          <ContactTitleAdress>Adres pracowni</ContactTitleAdress>
-          <ContactAdress>ul. Nieznana 8 bud.13, 04-690 Warszawa</ContactAdress>
-          <RegisterInformationTitle>Dane rejestrowe</RegisterInformationTitle>
-          <RegisterInformationName>NoName sp.z o.o.</RegisterInformationName>
-          <RegisterInformationAdress>
-            ul. Nieznana 8 bud.13, 04-690 Warszawa
-          </RegisterInformationAdress>
-          <RegisterInformationNumbers>
-            KRS 1000000000, NIP 20 00000000, REGON 300000000
-          </RegisterInformationNumbers>
-          <RegisterAccountNumber>
-            Nr konta: 12 3456 7890 0000 1111 2222 3333
-          </RegisterAccountNumber>
+
+          <ContactAdressRegistersInformation>
+            <ContactTitleAdress>Adres pracowni</ContactTitleAdress>
+            <ContactAdress>
+              ul. Nieznana 8 bud.13, 04-690 Warszawa
+            </ContactAdress>
+            <RegisterInformationTitle>Dane rejestrowe</RegisterInformationTitle>
+            <RegisterInformationName>NoName sp.z o.o.</RegisterInformationName>
+            <RegisterInformationAdress>
+              ul. Nieznana 8 bud.13, 04-690 Warszawa
+            </RegisterInformationAdress>
+            <RegisterInformationNumbers>
+              KRS 1000000000, NIP 20 00000000, REGON 300000000
+            </RegisterInformationNumbers>
+            <RegisterAccountNumber>
+              Nr konta: 12 3456 7890 0000 1111 2222 3333
+            </RegisterAccountNumber>
+          </ContactAdressRegistersInformation>
           <IconsMediaBox>
             <IconFacebook /> <IconInstagram />
           </IconsMediaBox>
         </ContactLeftContainer>
+
         <ContactRightContainer>
           <ContactForm />
         </ContactRightContainer>

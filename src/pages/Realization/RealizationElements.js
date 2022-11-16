@@ -76,7 +76,7 @@ export const RealizationHeaderIntroduction = styled.h1`
   }
 
   @media screen and (max-width: 640px) {
-    top: 120%;
+    top: 55%;
   }
 
   @media screen and (max-width: 360px) {
@@ -110,12 +110,12 @@ export const RealizationHeaderText = styled.p`
   }
   @media screen and (max-width: 640px) {
     width: 80%;
-    top: 150%;
+    top: 65%;
+    font-size: 16px;
   }
 
   @media screen and (max-width: 360px) {
     top: 65%;
-    font-size: 16px;
   }
 `;
 
@@ -202,12 +202,10 @@ export const RealizationSection = styled.div`
 
   @media screen and (max-width: 1024px) {
     top: 140vh;
-    height: 20vh;
   }
 
   @media screen and (max-width: 800px) {
     top: 85vh;
-    height: 80%;
   }
 `;
 export const RealizationSectionIntroduction = styled.h1`
@@ -263,15 +261,21 @@ export const ImagesContainer = styled.div`
 
   @media screen and (max-width: 1024px) {
     top: 25vh;
-    height: 70%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 80%;
   }
 
-  //   &@media screen and (max-width:800px) {
-  //     top: 0;
-  //     left: 10%;
-  //     height: 80%;
-  //     flex-direction: column;
-  //   }
+  @media screen and (max-width: 800px) {
+    top: 20vh;
+  }
+  @media screen and (max-width: 770px) {
+    top: 35vh;
+  }
+  @media screen and (max-width: 640px) {
+    top: 25vh;
+  }
 `;
 
 export const ImageBox = styled.div`
@@ -283,18 +287,21 @@ export const ImageBox = styled.div`
   &:hover {
     cursor: pointer;
   }
+
   @media screen and (max-width: 1024px) {
-    height: 15%;
+    height: 100%;
+    margin-bottom: 20px;
   }
 
   @media screen and (max-width: 800px) {
     width: 80%;
-    height: 40%;
+    height: 20%;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 20px;
   }
 `;
+
 export const ImageReal = styled.img`
   width: 100%;
   height: 100%;

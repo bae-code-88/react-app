@@ -87,7 +87,7 @@ export const ContactMainIntro = styled.h1`
   @media screen and (max-width: 640px) {
     top: 30vh;
   }
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 500px) {
     top: 20vh;
   }
 `;
@@ -115,15 +115,21 @@ export const ContactMainInfo = styled.p`
   @media screen and (max-width: 800px) {
     width: 80%;
   }
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 700px) {
     width: 70%;
     top: 45vh;
     line-height: 25px;
   }
+  @media screen and (max-width: 640px) {
+    width: 70%;
+    top: 50vh;
+    line-height: 25px;
+  }
 
-  @media screen and (max-width: 360px) {
-    font-size: 16px;
-    top: 35vh;
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+    line-height: 17px;
+    top: 30vh;
     width: 80%;
   }
 `;
@@ -146,8 +152,9 @@ export const ContactIcons = styled.div`
   @media screen and (max-width: 640px) {
     top: 70vh;
   }
-  @media screen and (max-width: 360px) {
-    top: 55vh;
+  @media screen and (max-width: 500px) {
+    top: 40vh;
+    font-size: 14px;
     flex-wrap: wrap;
   }
 `;
@@ -160,7 +167,7 @@ export const ContactIconBox = styled.div`
 
   &:nth-child(2) {
     margin-left: 1rem;
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 500px) {
       margin-left: 0;
     }
   }
@@ -185,76 +192,66 @@ export const ContactIconMail = styled(FaEnvelope)`
   margin: 0 0.9rem 0 0;
 `;
 
-export const ContactTitleAdress = styled.p`
+//informacje o firmie
+export const ContactAdressRegistersInformation = styled.div`
   position: absolute;
-  top: 50%;
+  // background-color: yellow;
+  height: 25vh;
+  width: 40%;
+  top: 40vh;
   left: 10%;
-  color: #a85f3f;
-  font-size: 14px;
-  align-self: flex-start;
-  @media screen and (max-width: 640px) {
-    top: 90vh;
+
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+    top: 40vh;
   }
-`;
-export const ContactAdress = styled.p`
-  position: absolute;
-  top: 55%;
-  left: 10%;
-  font-size: 14px;
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 800px) {
+    width: 80%;
+    top: 80vh;
+  }
+  @media screen and (max-width: 768px) {
+    width: 80%;
     top: 95vh;
   }
+  @media screen and (max-width: 500px) {
+    top: 130vh;
+  }
+`;
+
+export const ContactTitleAdress = styled.p`
+  color: #a85f3f;
+  font-size: 14px;
+  margin-bottom: 20px;
+`;
+export const ContactAdress = styled.p`
+  font-size: 14px;
+  margin-bottom: 20px;
 `;
 
 export const RegisterInformationTitle = styled.p`
-  position: absolute;
-  top: 65%;
-  left: 10%;
   font-size: 14px;
   color: #a85f3f;
-  @media screen and (max-width: 640px) {
-    top: 105vh;
-  }
+  margin-bottom: 20px;
 `;
 
 export const RegisterInformationName = styled.p`
-  position: absolute;
-  top: 70%;
-  left: 10%;
   font-size: 14px;
-  @media screen and (max-width: 640px) {
-    top: 110vh;
-  }
+  margin-bottom: 10px;
 `;
 
 export const RegisterInformationAdress = styled.p`
-  position: absolute;
-  top: 75%;
-  left: 10%;
   font-size: 14px;
-  @media screen and (max-width: 640px) {
-    top: 115vh;
-  }
+  margin-bottom: 10px;
 `;
 
 export const RegisterInformationNumbers = styled.p`
-  position: absolute;
-  top: 80%;
-  left: 10%;
   font-size: 14px;
-  @media screen and (max-width: 640px) {
-    top: 120vh;
-  }
+  margin-bottom: 10px;
 `;
 
 export const RegisterAccountNumber = styled.p`
-  position: absolute;
-  top: 85%;
-  left: 10%;
   font-size: 14px;
-  @media screen and (max-width: 640px) {
-    top: 130vh;
-  }
+  margin-bottom: 10px;
 `;
 
 export const IconsMediaBox = styled.div`
@@ -267,8 +264,8 @@ export const IconsMediaBox = styled.div`
   flex-direction: row;
   justify-items: space-between;
   font-size: 14px;
-  @media screen and (max-width: 640px) {
-    top: 135vh;
+  @media screen and (max-width: 800px) {
+    display: none;
   }
 `;
 export const IconFacebook = styled(FaFacebookF)`
@@ -304,8 +301,11 @@ export const ContactRightContainer = styled.div`
   @media screen and (max-width: 1024px) {
     top: 80vh;
   }
-  @media screen and (max-width: 640px) {
-    top: 145vh;
+  @media screen and (max-width: 800px) {
+    top: 30vh;
+  }
+  @media screen and (max-width: 500px) {
+    top: 50vh;
   }
 `;
 
@@ -317,8 +317,8 @@ export const ContactFormBoxTitle = styled.p`
   @media screen and (max-width: 640px) {
     margin: 10% 0 0;
   }
-  @media screen and (max-width: 360px) {
-    font-size: 30px;
+  @media screen and (max-width: 400px) {
+    font-size: 20px;
   }
 `;
 
@@ -368,20 +368,26 @@ export const ContactMapPlace = styled.div`
   width: 80%;
   height: 100vh;
   @media screen and (max-width: 1280px) {
-    top: 170vh;
+    top: 160vh;
   }
   @media screen and (max-width: 1024px) {
     top: 180vh;
   }
   @media screen and (max-width: 800px) {
-    top: 150vh;
+    top: 110vh;
+    height: 70vh;
   }
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
+    top: 125vh;
+    height: 50vh;
+  }
+
+  @media screen and (max-width: px) {
     top: 310vh;
     height: 150vh;
   }
-  @media screen and (max-width: 360px) {
-    top: 230vh;
-    height: 100vh;
+  @media screen and (max-width: 400px) {
+    top: 190vh;
+    height: 70vh;
   }
 `;
