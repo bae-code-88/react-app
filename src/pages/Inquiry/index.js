@@ -21,11 +21,11 @@ const Inquiry = () => {
           <Typography
             variant="h1"
             sx={{
-              marginLeft: { xxs: "0", md: "20%", lg: "20%", xl: "20%" },
+              marginLeft: { xxs: "0", md: "20%" },
               color: "#1d1d1b",
               fontWeight: "600",
               letterSpacing: "1px",
-              fontSize: { xxs: "30px", xs: "40px", md: "80px", xl: "100px" },
+              fontSize: { xxs: "30px", xs: "40px", sm: "80px", xl: "100px" },
               fontFamily: "Usual",
             }}
           >
@@ -36,10 +36,11 @@ const Inquiry = () => {
           <Typography
             variant="body1"
             sx={{
+              fontFamily: "Usual",
+              letterSpacing: "1px",
               textAlign: { xxs: "center", sm: "center", md: "start" },
               width: { xxs: "100%", sm: "100%", md: "80%" },
-              fontSize: { xxs: "14px", sm: "16px", lg: "18px" },
-              fontFamily: "Usual",
+              fontSize: { xxs: "16px", sm: "16px", lg: "18px" },
             }}
           >
             Formularz zapytania pozwoli{" "}
@@ -47,7 +48,7 @@ const Inquiry = () => {
               style={{
                 color: "#a85f3f",
                 fontFamily: "Usual",
-                fontWeight: "600",
+                fontWeight: "bold",
               }}
             >
               w kilku prostych krokach
@@ -79,9 +80,6 @@ const Inquiry = () => {
           }}
         >
           <CustomizedSteppers />
-        </Grid>
-        <Grid item xs={2}>
-          <div></div>
         </Grid>
       </Grid>
     </ThemeProvider>

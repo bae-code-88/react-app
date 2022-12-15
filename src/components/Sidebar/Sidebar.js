@@ -4,7 +4,6 @@ import{
     SidebarLogo,
     Icon,
     CloseIcon,
-
     SidebarWrapper,
     SidebarMenu,
     SidebarLink,
@@ -15,7 +14,7 @@ import{
 import { useTranslation } from 'react-i18next';
 import i18n from '../../i18n';
 
-const Sidebar = ({isOpen, toggle}, props)=>{
+const Sidebar = ({isOpen, toggle})=>{
   const[isActive, setIsActive]=useState(true);
   const { t }= useTranslation();
 
