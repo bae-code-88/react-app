@@ -6,7 +6,6 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 
-
 const CssTextField = styled(TextField)({
   "& label.Mui-focused": {
     color: " #a85f3f",
@@ -38,8 +37,8 @@ const StepContentButtons = ({
   handleBack,
   handleChange,
   activeStep,
-  step,
   value,
+  step,
 }) => {
   const buttonList = step.buttons.map((button, index) => (
     <Button

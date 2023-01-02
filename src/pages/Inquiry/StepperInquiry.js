@@ -1,6 +1,6 @@
 import React from "react";
 import { styled, ThemeProvider } from "@mui/material/styles";
-import Stack from "@mui/material/Stack"; //overridable component
+import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Stepper from "@mui/material/Stepper";
 import Step from "@mui/material/Step";
@@ -11,7 +11,6 @@ import StepConnector, {
   stepConnectorClasses,
 } from "@mui/material/StepConnector";
 import theme from "./InquiryThemeMedia";
-// import AiOutlineCheck from "react-icons/ai";
 import steps from "./DataInquiry";
 import SteperLabel from "./InquiryStepLabel";
 import StepContentButtons from "./InquiryButtons";
@@ -50,7 +49,7 @@ const CustomizedSteppers = () => {
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    console.log(this);
+    console.log(activeStep);
   };
 
   const handleBack = () => {
@@ -83,9 +82,10 @@ const CustomizedSteppers = () => {
             justifyContent: "center",
           }}
         >
-          {steps.map((step) => (
+          {steps.map((step, id) => (
             <Step
-              key={step.id}
+              key={id}
+              id={id}
               activestep={activeStep}
               step={step}
               sx={{
@@ -99,11 +99,13 @@ const CustomizedSteppers = () => {
                 backgroundColor: "green",
               }}
             >
-              <SteperLabel activestep={activeStep} step={step} />
+              <SteperLabel activestep={activeStep} step={step} id={id} />
 
               <StepContent
                 activestep={activeStep}
                 step={step}
+                key={step.id}
+                id={id}
                 value={value}
                 sx={{
                   boxSizing: "border-box",
@@ -156,6 +158,7 @@ const CustomizedSteppers = () => {
                 <StepContentButtons
                   step={step}
                   key={step.id}
+                  id={id}
                   activestep={activeStep}
                   handleBack={handleBack}
                   handleChange={handleChange}
