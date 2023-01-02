@@ -142,7 +142,7 @@ const SteperLabel = ({ step, activeStep }) => {
             justifyContent: { xxs: "center", sm: "center" },
             border: "none",
             margin: "0px",
-            backgroundColor: "orange",
+            // backgroundColor: "orange",
           }}
         >
           <Typography

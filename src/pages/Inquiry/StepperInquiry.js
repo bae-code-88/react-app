@@ -96,7 +96,7 @@ const CustomizedSteppers = () => {
                 width: "80vw",
                 marginTop: { xxs: "0px", sm: "10px" },
                 marginLeft: { xxs: "0px", sm: "0px" },
-                backgroundColor: "green",
+                // backgroundColor: "green",
               }}
             >
               <SteperLabel activestep={activeStep} step={step} id={id} />
@@ -116,7 +116,7 @@ const CustomizedSteppers = () => {
                   display: "flex",
                   alignItems: { xxs: "center" },
                   justifyContent: { xxs: "center", sm: "flex-end" },
-                  backgroundColor: "violet",
+                  // backgroundColor: "violet",
                   // overflow: "hidden",
                 }}
               >
@@ -127,7 +127,7 @@ const CustomizedSteppers = () => {
                     boxSizing: "border-box",
                     display: "flex",
                     margin: "0px",
-                    backgroundColor: "pink",
+                    // backgroundColor: "pink",
                   }}
                 >
                   <Typography
@@ -157,8 +157,7 @@ const CustomizedSteppers = () => {
 
                 <StepContentButtons
                   step={step}
-                  key={step.id}
-                  id={id}
+                  id={step.id}
                   activestep={activeStep}
                   handleBack={handleBack}
                   handleChange={handleChange}

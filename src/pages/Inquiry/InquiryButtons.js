@@ -33,12 +33,12 @@ const CssTextField = styled(TextField)({
 });
 
 const StepContentButtons = ({
+  step,
+  activeStep,
   handleNext,
   handleBack,
   handleChange,
-  activeStep,
   value,
-  step,
 }) => {
   const buttonList = step.buttons.map((button, index) => (
     <Button
