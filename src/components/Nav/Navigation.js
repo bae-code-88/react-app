@@ -62,7 +62,7 @@ const Navigation = ({ toggle, handleScroll, scrollY, props }) => {
           </NavBtn>
 
           <NavMenu>
-            <NavLink to="/oferta" activeStyle>
+            <NavLink to="/oferta" activeStyle={{ color: "red" }}>
               {t("Oferta")}
             </NavLink>
             <NavLink to="/zapytanie" activeStyle>

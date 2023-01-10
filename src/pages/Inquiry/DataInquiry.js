@@ -11,14 +11,14 @@ const steps = [
     info: "Typ nieruchomości",
     label: "2/8",
     description: "Nieruchomość",
-    buttons: [`Mieszkanie`, `Dom`, "Lokal"],
+    buttons: { individual: [`Mieszkanie`, `Dom`], commercial: ['Lokal'] },
   },
   {
     id: 3,
     info: "Zakres prac",
     label: "3/8",
     description: `Potrzebuję`,
-    buttons: [`Realizacji "pod klucz"`, `Projektu`, 'Remontu'],
+    buttons: [`Realizacji "pod klucz"`, `Projektu`, "Remontu"],
   },
   {
     id: 4,

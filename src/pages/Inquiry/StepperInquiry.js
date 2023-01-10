@@ -12,9 +12,9 @@ import StepConnector, {
 } from "@mui/material/StepConnector";
 import theme from "./InquiryThemeMedia";
 import steps from "./DataInquiry";
-import SteperLabel from "./InquiryStepLabel";
-import StepContentButtons from "./InquiryButtons";
-import FinishedSteps from "./InquiryFinishedSteps";
+import InquiryStepLabel from "./InquiryStepLabel";
+import InquiryButtons from "./InquiryButtons";
+import InquiryFinishedSteps from "./InquiryFinishedSteps";
 
 const ColorlibConnector = styled(StepConnector)(() => ({
   [`&.${stepConnectorClasses.alternativeLabel}`]: {
@@ -44,8 +44,9 @@ const ColorlibConnector = styled(StepConnector)(() => ({
 }));
 
 const CustomizedSteppers = () => {
-  const [activeStep, setActiveStep] = React.useState(0);
+  const [activeStep, setActiveStep] = React.useState(1);
   const [value, setValue] = React.useState("");
+  const [stepType, setStepType] = React.useState();
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -84,9 +85,9 @@ const CustomizedSteppers = () => {
         >
           {steps.map((step, id) => (
             <Step
-              key={id}
-              id={id}
-              activestep={activeStep}
+              key={step.id}
+              id={step.id}
+              active={step.id === activeStep}
               step={step}
               sx={{
                 display: "flex",
@@ -99,12 +100,15 @@ const CustomizedSteppers = () => {
                 // backgroundColor: "green",
               }}
             >
-              <SteperLabel activestep={activeStep} step={step} id={id} />
+              <InquiryStepLabel
+                active={step.id === activeStep}
+                step={step}
+                id={id}
+              />
 
               <StepContent
-                activestep={activeStep}
+                active={step.id === activeStep}
                 step={step}
-                key={step.id}
                 id={id}
                 value={value}
                 sx={{
@@ -155,14 +159,13 @@ const CustomizedSteppers = () => {
                   </Typography>
                 </Box>
 
-                <StepContentButtons
+                <InquiryButtons
                   step={step}
-                  id={step.id}
-                  activestep={activeStep}
                   handleBack={handleBack}
                   handleChange={handleChange}
                   handleNext={handleNext}
                   value={value}
+                  setStepType={setStepType}
                 />
               </StepContent>
             </Step>
@@ -170,8 +173,8 @@ const CustomizedSteppers = () => {
         </Stepper>
       </ThemeProvider>
 
-      <FinishedSteps
-        activestep={activeStep}
+      <InquiryFinishedSteps
+        active={activeStep}
         handleReset={handleReset}
         steps={steps}
       />

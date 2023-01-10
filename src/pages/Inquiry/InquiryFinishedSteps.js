@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 // import AiOutlineCheck from "react-icons/ai";
 
-const FinishedSteps = ({ activeStep, handleReset, steps }) => {
+const InquiryFinishedSteps = ({ activeStep, handleReset, steps }) => {
   return (
     <>
       {activeStep === steps.length && (
@@ -61,4 +61,4 @@ const FinishedSteps = ({ activeStep, handleReset, steps }) => {
   );
 };
 
-export default FinishedSteps;
+export default InquiryFinishedSteps;

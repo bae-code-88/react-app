@@ -32,13 +32,14 @@ const CssTextField = styled(TextField)({
   },
 });
 
-const StepContentButtons = ({
+const InquiryButtons = ({
   step,
   activeStep,
   handleNext,
   handleBack,
   handleChange,
   value,
+  setStepType,
 }) => {
   const buttonList = step.buttons.map((button, index) => (
     <Button
@@ -46,7 +47,14 @@ const StepContentButtons = ({
       type="button"
       key={index}
       activestep={activeStep}
-      onClick={handleNext}
+      onClick={() => {
+        if (button === "Komercyjnym") {
+          setStepType("commercial");
+        } else if (button === "Indywidualnym") {
+          setStepType("individual");
+        }
+        handleNext();
+      }}
       sx={{
         mr: 1,
         color: "#a85f3f",
@@ -211,4 +219,10 @@ const StepContentButtons = ({
   );
 };
 
-export default StepContentButtons;
+export default InquiryButtons;
+
+// (Array.isArray(step.buttons) ? step.buttons : Object.keys(step.buttons))
+
+// Object.keys(step.buttons) => ["individual", "commercial"]
+// step.buttons[2]
+// step.buttons["individual"]

@@ -112,13 +112,13 @@ ColorlibStepIcon.propTypes = {
   icon: PropTypes.node,
 };
 
-const SteperLabel = ({ step, activeStep }) => {
+const InquiryStepLabel = ({ step, active }) => {
   return (
     <ThemeProvider theme={theme}>
       <Box>
         {/* //H1 number of step */}
         <Typography
-          activestep={activeStep}
+          activestep={active}
           sx={{
             color: "#efefef",
             fontFamily: "Usual",
@@ -133,7 +133,7 @@ const SteperLabel = ({ step, activeStep }) => {
       <Box name="steplabel_icon_info_container">
         <StepLabel
           StepIconComponent={ColorlibStepIcon}
-          activestep={activeStep}
+          activestep={active}
           sx={{
             width: { xxs: "100%", sm: "30vw" },
             display: "flex",
@@ -146,7 +146,7 @@ const SteperLabel = ({ step, activeStep }) => {
           }}
         >
           <Typography
-            activestep={activeStep}
+            activestep={active}
             sx={{
               width: "100%",
               fontFamily: "Usual",
@@ -161,4 +161,4 @@ const SteperLabel = ({ step, activeStep }) => {
     </ThemeProvider>
   );
 };
-export default SteperLabel;
+export default InquiryStepLabel;
