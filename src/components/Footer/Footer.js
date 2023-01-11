@@ -17,7 +17,7 @@ import {
   FooterAdres,
   DesignRealisation,
   DesignerLink,
-} from "./FooterElements";
+} from './FooterElements'
 
 const Footer = () => {
   return (
@@ -34,10 +34,10 @@ const Footer = () => {
 
       <FooterRightContainer>
         <FooterBtn>
-          <FooterBtnLink href="http://www.facebook.com">
+          <FooterBtnLink href='http://www.facebook.com'>
             <IconF />
           </FooterBtnLink>
-          <FooterBtnLink href="http://www.instagram.com">
+          <FooterBtnLink href='http://www.instagram.com'>
             <IconI />
           </FooterBtnLink>
         </FooterBtn>
@@ -52,11 +52,10 @@ const Footer = () => {
         </FooterContactWrapper>
         <FooterAdres>ul. Nieznana 8 bud.13, 04-690 Warszawa</FooterAdres>
         <DesignRealisation>
-          Realizacja{" "}
-          <DesignerLink href="http://chm.media.pl">CHM STUDIO</DesignerLink>
+          Realizacja <DesignerLink href='http://chm.media.pl'>CHM STUDIO</DesignerLink>
         </DesignRealisation>
       </FooterRightContainer>
     </FooterContainer>
-  );
-};
-export default Footer;
+  )
+}
+export default Footer

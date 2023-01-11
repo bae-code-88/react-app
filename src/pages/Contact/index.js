@@ -21,9 +21,9 @@ import {
   IconsMediaBox,
   ContactRightContainer,
   ContactMapPlace,
-} from "./ContactElements";
-import ContactForm from "./ContactForm";
-import ContactMap from "./ContactMap";
+} from './ContactElements'
+import ContactForm from './ContactForm'
+import ContactMap from './ContactMap'
 
 const Contact = () => {
   return (
@@ -49,9 +49,7 @@ const Contact = () => {
 
           <ContactAdressRegistersInformation>
             <ContactTitleAdress>Adres pracowni</ContactTitleAdress>
-            <ContactAdress>
-              ul. Nieznana 8 bud.13, 04-690 Warszawa
-            </ContactAdress>
+            <ContactAdress>ul. Nieznana 8 bud.13, 04-690 Warszawa</ContactAdress>
             <RegisterInformationTitle>Dane rejestrowe</RegisterInformationTitle>
             <RegisterInformationName>NoName sp.z o.o.</RegisterInformationName>
             <RegisterInformationAdress>
@@ -77,7 +75,7 @@ const Contact = () => {
         </ContactMapPlace>
       </ContactBox>
     </>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

@@ -1,8 +1,8 @@
-import { NavLink as LinkR } from "react-router-dom";
-import styled from "styled-components";
-import "../../images/projekt.jpg";
-import "../../images/realizacja.jpg";
-import "../../images/wnetrza.jpg";
+import { NavLink as LinkR } from 'react-router-dom'
+import styled from 'styled-components'
+import '../../images/projekt.jpg'
+import '../../images/realizacja.jpg'
+import '../../images/wnetrza.jpg'
 
 export const HomeHeaderLeftContainer = styled.div`
   display: flex;
@@ -23,7 +23,7 @@ export const HomeHeaderLeftContainer = styled.div`
     width: 70%;
     margin: 68% auto 0 auto;
   }
-`;
+`
 
 // LETTERS
 export const HomeHeaderLetterP = styled.h1`
@@ -73,7 +73,7 @@ export const HomeHeaderLetterP = styled.h1`
   @media screen and (max-width: 1024px) {
     display: none;
   }
-`;
+`
 
 export const HomeHeaderLetterR = styled.h1`
   position: absolute;
@@ -121,7 +121,7 @@ export const HomeHeaderLetterR = styled.h1`
   @media screen and (max-width: 1024px) {
     display: none;
   }
-`;
+`
 
 export const HomeHeaderLetterW = styled.h1`
   position: absolute;
@@ -171,7 +171,7 @@ export const HomeHeaderLetterW = styled.h1`
   @media screen and (max-width: 1024px) {
     display: none;
   }
-`;
+`
 
 // TEXT HEADER
 export const HomeHeaderTextP = styled.h1`
@@ -221,7 +221,7 @@ export const HomeHeaderTextP = styled.h1`
   @media screen and (max-width: 1000px) {
     display: none;
   }
-`;
+`
 
 export const HomeHeaderTextR = styled.h1`
   font-size: 7rem;
@@ -266,7 +266,7 @@ export const HomeHeaderTextR = styled.h1`
   @media screen and (max-width: 1000px) {
     display: none;
   }
-`;
+`
 
 export const HomeHeaderTextW = styled.h1`
   font-size: 7rem;
@@ -311,7 +311,7 @@ export const HomeHeaderTextW = styled.h1`
   @media screen and (max-width: 1000px) {
     display: none;
   }
-`;
+`
 
 // IMAGE Header
 export const HomeHeaderRightContainer = styled.div`
@@ -324,7 +324,7 @@ export const HomeHeaderRightContainer = styled.div`
   @media screen and (max-width: 1280px) {
     width: 100%;
   }
-`;
+`
 
 export const ImageContainer = styled.div`
   position: absolute;
@@ -371,7 +371,7 @@ export const ImageContainer = styled.div`
     width: 80%;
     height: 50%;
   }
-`;
+`
 
 export const ImageP = styled.img`
   height: 100%;
@@ -397,7 +397,7 @@ export const ImageP = styled.img`
       opacity: 1;
     }
   }
-`;
+`
 export const ImageR = styled.img`
   width: 110%;
   height: 100%;
@@ -428,7 +428,7 @@ export const ImageR = styled.img`
   @media screen and (max-width: 540px) {
     height: 100%;
   }
-`;
+`
 export const ImageW = styled.img`
   width: 100%;
   height: 100%;
@@ -456,7 +456,7 @@ export const ImageW = styled.img`
       opacity: 1;
     }
   }
-`;
+`
 
 // ARTICLE
 
@@ -486,7 +486,7 @@ export const HomeArticle = styled.article`
   @media screen and (max-width: 540px) {
     top: 60%;
   }
-`;
+`
 
 export const HomeAside = styled.aside`
   display: flex;
@@ -504,7 +504,7 @@ export const HomeAside = styled.aside`
   @media screen and (max-width: 540px) {
     display: none;
   }
-`;
+`
 
 export const HomeManImage = styled.img`
   width: 65%;
@@ -516,7 +516,7 @@ export const HomeManImage = styled.img`
     margin-right: -40%;
     width: 110%;
   }
-`;
+`
 
 export const HomeArticleSection = styled.section`
   display: flex;
@@ -529,7 +529,7 @@ export const HomeArticleSection = styled.section`
     width: 100%;
     margin-left: 10%;
   }
-`;
+`
 
 export const HomeArticleIntroduction = styled.p`
 font size:18px;
@@ -537,7 +537,7 @@ color:#a85f3f;
 align-self:flex-start;
 margin-bottom:20px;
 letter-spacing:1px;
-`;
+`
 
 export const HomeArticleHeadline = styled.h1`
   font-size: 30px;
@@ -551,13 +551,13 @@ export const HomeArticleHeadline = styled.h1`
     width: 100%;
     margin-left: 0;
   }
-`;
+`
 
 export const HomeArticleText = styled.p`
 color: #1d1d1b;
 font size:14px;
 line-height:30px;
-`;
+`
 
 export const HomeButton = styled(LinkR)`
   display: flex;
@@ -572,19 +572,19 @@ export const HomeButton = styled(LinkR)`
   &:hover {
     width: 400px;
   }
-`;
+`
 export const Line = styled.div`
   height: 100%;
   width: 20%;
   border-bottom: 1px solid #a85f3f;
   margin-right: 30px;
-`;
+`
 
 export const ButtonText = styled.p`
 font size:14px;
 width:80%;
 letter-spacing:1px;
-`;
+`
 
 // GALLERY
 export const HomeGallery = styled.section`
@@ -621,7 +621,7 @@ export const HomeGallery = styled.section`
     top: 145%;
     height: 200%;
   }
-`;
+`
 
 export const HomeGalleryIntroduction = styled.p`
   align-self: center;
@@ -653,7 +653,7 @@ export const HomeGalleryIntroduction = styled.p`
       top: 5%;
     }
   }
-`;
+`
 export const GalleryStripe = styled.div`
   height: 110vh;
   width: 100%;
@@ -668,7 +668,7 @@ export const GalleryStripe = styled.div`
   @media screen and (max-width: 540px) {
     display: none;
   }
-`;
+`
 
 export const GalleryImageContainer = styled.div`
   display: flex;
@@ -696,7 +696,7 @@ export const GalleryImageContainer = styled.div`
     top: 10%;
     flex-direction: column;
   }
-`;
+`
 
 export const GalleryImage = styled.img`
   z-index: 1;
@@ -715,7 +715,7 @@ export const GalleryImage = styled.img`
     width: 80%;
     margin: 2% 0 0;
   }
-`;
+`
 
 export const GalleryLine = styled.div`
   width: 50%;
@@ -732,7 +732,7 @@ export const GalleryLine = styled.div`
   @media screen and (max-width: 768px) {
     display: none;
   }
-`;
+`
 export const HomeGalleryButtonContainer = styled.button`
   z-index: 1;
   width: 190px;
@@ -755,7 +755,7 @@ export const HomeGalleryButtonContainer = styled.button`
   @media screen and (max-width: 500px) {
     bottom: 25%;
   }
-`;
+`
 
 export const HomeGalleryButton = styled.a`
   font-size: 16px;
@@ -766,4 +766,4 @@ export const HomeGalleryButton = styled.a`
   text-align: center;
   text-decoration: none;
   color: #a85f3f;
-`;
+`

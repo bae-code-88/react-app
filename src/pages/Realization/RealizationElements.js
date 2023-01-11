@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 // Header
 export const RealizationHeader = styled.div`
@@ -12,7 +12,7 @@ export const RealizationHeader = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-`;
+`
 
 export const RealizationHeaderLeftContainer = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ export const RealizationHeaderLeftContainer = styled.div`
 
   height: 100%;
   width: 40%;
-`;
+`
 export const RealizationHeaderLetter = styled.h1`
   position: absolute;
   top: -200px;
@@ -48,7 +48,7 @@ export const RealizationHeaderLetter = styled.h1`
   @media screen and (max-width: 1024px) {
     display: none;
   }
-`;
+`
 export const RealizationHeaderIntroduction = styled.h1`
   position: absolute;
   top: 30%;
@@ -82,7 +82,7 @@ export const RealizationHeaderIntroduction = styled.h1`
   @media screen and (max-width: 360px) {
     top: 50%;
   }
-`;
+`
 export const RealizationHeaderText = styled.p`
   position: absolute;
   top: 55%;
@@ -117,7 +117,7 @@ export const RealizationHeaderText = styled.p`
   @media screen and (max-width: 360px) {
     top: 65%;
   }
-`;
+`
 
 export const RealizationHeaderRightContainer = styled.div`
   display: flex;
@@ -131,7 +131,7 @@ export const RealizationHeaderRightContainer = styled.div`
   @media screen and (max-width: 1280px) {
     width: 100%;
   }
-`;
+`
 export const ImageContainer = styled.div`
   position: absolute;
   top: 0;
@@ -180,11 +180,11 @@ export const ImageContainer = styled.div`
     width: 80%;
     height: 50%;
   }
-`;
+`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-`;
+`
 
 //Section
 
@@ -207,7 +207,7 @@ export const RealizationSection = styled.div`
   @media screen and (max-width: 800px) {
     top: 85vh;
   }
-`;
+`
 export const RealizationSectionIntroduction = styled.h1`
   font-size: 3rem;
   text-align: center;
@@ -218,7 +218,7 @@ export const RealizationSectionIntroduction = styled.h1`
   @media screen and(max-width:640px) {
     font-size: 2rem;
   }
-`;
+`
 export const RealizationButtonContainer = styled.div`
   width: 100%;
   height: 10vh;
@@ -227,14 +227,14 @@ export const RealizationButtonContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-`;
+`
 export const RealizationButton = styled.button`
   font-size: 16px;
   width: 140px;
   height: 30px;
   margin: 15px;
 
-  color: ${({ isActive, name }) => (isActive === name ? "#a85f3f" : "#1d1d1b")};
+  color: ${({ isActive, name }) => (isActive === name ? '#a85f3f' : '#1d1d1b')};
   background-color: transparent;
   border: none;
   text-transform: uppercase;
@@ -245,7 +245,7 @@ export const RealizationButton = styled.button`
     padding: 10px;
     margin: 0;
   }
-`;
+`
 
 export const ImagesContainer = styled.div`
   position: absolute;
@@ -276,7 +276,7 @@ export const ImagesContainer = styled.div`
   @media screen and (max-width: 640px) {
     top: 25vh;
   }
-`;
+`
 
 export const ImageBox = styled.div`
   width: 35%;
@@ -300,7 +300,7 @@ export const ImageBox = styled.div`
     margin-right: 0;
     margin-bottom: 20px;
   }
-`;
+`
 
 export const ImageReal = styled.img`
   width: 100%;
@@ -309,4 +309,4 @@ export const ImageReal = styled.img`
   &:hover {
     opacity: 0.7;
   }
-`;
+`

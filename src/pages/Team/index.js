@@ -11,9 +11,9 @@ import {
   TeamSectionIntroduction,
   TeamSectionHeadLine,
   TeamSectionText,
-} from "./TeamElements";
-import team from "../../images/community-concept-with-hands-people (1).jpg";
-import Member from "./Member";
+} from './TeamElements'
+import team from '../../images/community-concept-with-hands-people (1).jpg'
+import Member from './Member'
 
 const Team = () => {
   return (
@@ -23,9 +23,9 @@ const Team = () => {
           <TeamHeaderLetter>Z</TeamHeaderLetter>
           <TeamHeaderIntroduction>Zespół</TeamHeaderIntroduction>
           <TeamHeaderText>
-            {" "}
-            Zespół indywidualności, w którym każdy wnosi coś wyjątkowego do
-            pracy studia. Poznaj nas lepiej.
+            {' '}
+            Zespół indywidualności, w którym każdy wnosi coś wyjątkowego do pracy studia. Poznaj nas
+            lepiej.
           </TeamHeaderText>
         </TeamHeaderLeftContainer>
 
@@ -43,6 +43,6 @@ const Team = () => {
         <Member />
       </TeamSection>
     </>
-  );
-};
-export default Team;
+  )
+}
+export default Team

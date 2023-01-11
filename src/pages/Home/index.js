@@ -1,14 +1,14 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next'
 
-import projekt from "../../images/projekt.jpg";
-import realizacja from "../../images/realizacja.jpg";
-import wnetrza from "../../images/wnetrza.jpg";
+import projekt from '../../images/projekt.jpg'
+import realizacja from '../../images/realizacja.jpg'
+import wnetrza from '../../images/wnetrza.jpg'
 
-import man from "../../images/man.png";
-import proj1 from "../../images/proj1.png";
-import proj2 from "../../images/proj2.png";
-import proj3 from "../../images/proj3.png";
-import proj4 from "../../images/proj4.png";
+import man from '../../images/man.png'
+import proj1 from '../../images/proj1.png'
+import proj2 from '../../images/proj2.png'
+import proj3 from '../../images/proj3.png'
+import proj4 from '../../images/proj4.png'
 
 import {
   HomeHeaderLeftContainer,
@@ -41,11 +41,11 @@ import {
   GalleryImageContainer,
   HomeGalleryButtonContainer,
   HomeGalleryButton,
-} from "./HomeElements";
+} from './HomeElements'
 
 const Home = (props) => {
-  const { t } = useTranslation();
-  const letters = ["P", "R", "W"];
+  const { t } = useTranslation()
+  const letters = ['P', 'R', 'W']
 
   return (
     <>
@@ -76,14 +76,12 @@ const Home = (props) => {
         </HomeAside>
 
         <HomeArticleSection>
-          <HomeArticleIntroduction>
-            {t("HomeWprowadzenie")}
-          </HomeArticleIntroduction>
-          <HomeArticleHeadline>{t("HomeHeadline")}</HomeArticleHeadline>
-          <HomeArticleText>{t("HomeText")}</HomeArticleText>
-          <HomeButton to="/oferta">
+          <HomeArticleIntroduction>{t('HomeWprowadzenie')}</HomeArticleIntroduction>
+          <HomeArticleHeadline>{t('HomeHeadline')}</HomeArticleHeadline>
+          <HomeArticleText>{t('HomeText')}</HomeArticleText>
+          <HomeButton to='/oferta'>
             <Line></Line>
-            <ButtonText>{t("HomeButtonOffer")}</ButtonText>
+            <ButtonText>{t('HomeButtonOffer')}</ButtonText>
           </HomeButton>
         </HomeArticleSection>
       </HomeArticle>
@@ -102,12 +100,10 @@ const Home = (props) => {
         <GalleryStripe></GalleryStripe>
         <GalleryLine></GalleryLine>
         <HomeGalleryButtonContainer>
-          <HomeGalleryButton href="/realizacje">
-            Więcej realizacji
-          </HomeGalleryButton>
+          <HomeGalleryButton href='/realizacje'>Więcej realizacji</HomeGalleryButton>
         </HomeGalleryButtonContainer>
       </HomeGallery>
     </>
-  );
-};
-export default Home;
+  )
+}
+export default Home

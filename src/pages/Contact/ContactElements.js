@@ -1,10 +1,5 @@
-import styled from "styled-components";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaPhoneAlt,
-  FaEnvelope,
-} from "react-icons/fa";
+import styled from 'styled-components'
+import { FaFacebookF, FaInstagram, FaPhoneAlt, FaEnvelope } from 'react-icons/fa'
 
 export const ContactBox = styled.div`
   position: absolute;
@@ -17,7 +12,7 @@ export const ContactBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`;
+`
 
 export const ContactLeftContainer = styled.div`
   display: flex;
@@ -33,7 +28,7 @@ export const ContactLeftContainer = styled.div`
   @media screen and (max-width: 1024px) {
     height: 150%;
   }
-`;
+`
 
 export const ContactStyledLetter = styled.h1`
   position: absolute;
@@ -60,7 +55,7 @@ export const ContactStyledLetter = styled.h1`
   @media screen and (max-width: 1024px) {
     display: none;
   }
-`;
+`
 
 export const ContactMainIntro = styled.h1`
   position: absolute;
@@ -90,7 +85,7 @@ export const ContactMainIntro = styled.h1`
   @media screen and (max-width: 500px) {
     top: 20vh;
   }
-`;
+`
 
 export const ContactMainInfo = styled.p`
   position: absolute;
@@ -132,7 +127,7 @@ export const ContactMainInfo = styled.p`
     top: 30vh;
     width: 80%;
   }
-`;
+`
 
 export const ContactIcons = styled.div`
   position: absolute;
@@ -157,7 +152,7 @@ export const ContactIcons = styled.div`
     font-size: 14px;
     flex-wrap: wrap;
   }
-`;
+`
 
 export const ContactIconBox = styled.div`
   display: flex;
@@ -178,19 +173,19 @@ export const ContactIconBox = styled.div`
   @media screen and (max-width: 785px) {
     margin-left: 0;
   }
-`;
+`
 export const ContactIconPhone = styled(FaPhoneAlt)`
   display: block;
   font-size: 1.1rem;
   color: #a85f3f;
   margin: 0 0.9rem 0 0;
-`;
+`
 export const ContactIconMail = styled(FaEnvelope)`
   display: block;
   font-size: 1.1rem;
   color: #a85f3f;
   margin: 0 0.9rem 0 0;
-`;
+`
 
 //informacje o firmie
 export const ContactAdressRegistersInformation = styled.div`
@@ -216,43 +211,43 @@ export const ContactAdressRegistersInformation = styled.div`
   @media screen and (max-width: 500px) {
     top: 130vh;
   }
-`;
+`
 
 export const ContactTitleAdress = styled.p`
   color: #a85f3f;
   font-size: 14px;
   margin-bottom: 20px;
-`;
+`
 export const ContactAdress = styled.p`
   font-size: 14px;
   margin-bottom: 20px;
-`;
+`
 
 export const RegisterInformationTitle = styled.p`
   font-size: 14px;
   color: #a85f3f;
   margin-bottom: 20px;
-`;
+`
 
 export const RegisterInformationName = styled.p`
   font-size: 14px;
   margin-bottom: 10px;
-`;
+`
 
 export const RegisterInformationAdress = styled.p`
   font-size: 14px;
   margin-bottom: 10px;
-`;
+`
 
 export const RegisterInformationNumbers = styled.p`
   font-size: 14px;
   margin-bottom: 10px;
-`;
+`
 
 export const RegisterAccountNumber = styled.p`
   font-size: 14px;
   margin-bottom: 10px;
-`;
+`
 
 export const IconsMediaBox = styled.div`
   position: absolute;
@@ -267,20 +262,20 @@ export const IconsMediaBox = styled.div`
   @media screen and (max-width: 800px) {
     display: none;
   }
-`;
+`
 export const IconFacebook = styled(FaFacebookF)`
   display: block;
   font-size: 1rem;
   cursor: pointer;
   color: #1d1d1b;
-`;
+`
 export const IconInstagram = styled(FaInstagram)`
   display: block;
   font-size: 1rem;
   cursor: pointer;
   color: #1d1d1b;
   margin-left: 1.8rem;
-`;
+`
 
 export const ContactRightContainer = styled.div`
   position: absolute;
@@ -307,7 +302,7 @@ export const ContactRightContainer = styled.div`
   @media screen and (max-width: 500px) {
     top: 50vh;
   }
-`;
+`
 
 export const ContactFormBoxTitle = styled.p`
   display: block;
@@ -320,19 +315,19 @@ export const ContactFormBoxTitle = styled.p`
   @media screen and (max-width: 400px) {
     font-size: 20px;
   }
-`;
+`
 
 export const ContactFormBoxText = styled.p`
   display: block;
   font-size: 16px;
   width: 80%;
   margin: 0 0 5% 0;
-`;
+`
 export const ContactFormBox = styled.form`
   width: 80%;
   display: flex;
   flex-direction: column;
-`;
+`
 
 export const ContactFormInput = styled.input`
   width: 70%;
@@ -341,7 +336,7 @@ export const ContactFormInput = styled.input`
   border-right: none;
   border-bottom: 1px solid #a85f3f;
   line-height: 40px;
-`;
+`
 
 export const ContactMessageBox = styled.textarea`
   border-top: none;
@@ -350,7 +345,7 @@ export const ContactMessageBox = styled.textarea`
   border-bottom: 1px solid #a85f3f;
   line-height: 30px;
   resize: none;
-`;
+`
 
 export const ContactFormButton = styled.button`
   width: 100px;
@@ -360,7 +355,7 @@ export const ContactFormButton = styled.button`
   border: none;
   margin-top: 10%;
   cursor: pointer;
-`;
+`
 
 export const ContactMapPlace = styled.div`
   position: absolute;
@@ -390,4 +385,4 @@ export const ContactMapPlace = styled.div`
     top: 190vh;
     height: 70vh;
   }
-`;
+`

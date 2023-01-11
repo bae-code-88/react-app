@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { IoIosArrowDown } from "react-icons/io";
+import styled from 'styled-components'
+import { IoIosArrowDown } from 'react-icons/io'
 
 //HEADER
 export const CarrerHeader = styled.div`
@@ -13,7 +13,7 @@ export const CarrerHeader = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-`;
+`
 
 export const CarrerHeaderLeftContainer = styled.div`
   display: flex;
@@ -23,7 +23,7 @@ export const CarrerHeaderLeftContainer = styled.div`
 
   height: 100%;
   width: 40%;
-`;
+`
 
 export const CarrerHeaderLetter = styled.h1`
   position: absolute;
@@ -50,7 +50,7 @@ export const CarrerHeaderLetter = styled.h1`
   @media screen and (max-width: 1024px) {
     display: none;
   }
-`;
+`
 
 export const CarrerHeaderIntroduction = styled.h1`
   position: absolute;
@@ -85,7 +85,7 @@ export const CarrerHeaderIntroduction = styled.h1`
   @media screen and (max-width: 400px) {
     top: 65%;
   }
-`;
+`
 
 export const CarrerHeaderText = styled.p`
   position: absolute;
@@ -122,7 +122,7 @@ export const CarrerHeaderText = styled.p`
     font-size: 14px;
     line-height: 17px;
   }
-`;
+`
 
 export const CarrerHeaderRightContainer = styled.div`
   display: flex;
@@ -136,7 +136,7 @@ export const CarrerHeaderRightContainer = styled.div`
   @media screen and (max-width: 1280px) {
     width: 100%;
   }
-`;
+`
 
 export const CarrerImageContainer = styled.div`
   position: absolute;
@@ -189,12 +189,12 @@ export const CarrerImageContainer = styled.div`
   @media screen and (max-width: 400px) {
     top: 10vh;
   }
-`;
+`
 
 export const CarrerHeaderImage = styled.img`
   width: 100%;
   height: 100%;
-`;
+`
 
 //Section
 
@@ -224,7 +224,7 @@ export const CarrerSection = styled.div`
     top: 75vh;
     height: 200vh;
   }
-`;
+`
 
 export const CarrerSectionIntroduction = styled.p`
   position: absolute;
@@ -242,7 +242,7 @@ export const CarrerSectionIntroduction = styled.p`
     top: 0;
     font-size: 14px;
   }
-`;
+`
 export const CarrerArticleBox = styled.article`
   display: flex;
   flex-direcion: row;
@@ -252,21 +252,18 @@ export const CarrerArticleBox = styled.article`
   align-items: flex-start;
 
   width: 80%;
-  height: ${({ isTextOpen, isActive, id }) =>
-    isTextOpen === id && isActive ? "90vh" : "15%"};
+  height: ${({ isTextOpen, isActive, id }) => (isTextOpen === id && isActive ? '90vh' : '15%')};
   margin-top: 7rem;
   border-bottom: 1px solid #1f1f1f;
 
   @media screen and (max-width: 640px) {
-    height: ${({ isTextOpen, isActive, id }) =>
-      isTextOpen === id && isActive ? "300vh" : "45%"};
+    height: ${({ isTextOpen, isActive, id }) => (isTextOpen === id && isActive ? '300vh' : '45%')};
   }
   @media screen and (max-width: 400px) {
-    height: ${({ isTextOpen, isActive, id }) =>
-      isTextOpen === id && isActive ? "160vh" : "45%"};
+    height: ${({ isTextOpen, isActive, id }) => (isTextOpen === id && isActive ? '160vh' : '45%')};
     margin-top: 2rem;
   }
-`;
+`
 
 export const CarrerTitle = styled.h1`
   font-size: 2.3rem;
@@ -282,7 +279,7 @@ export const CarrerTitle = styled.h1`
   @media screen and (max-width: 400px) {
     font-size: 20px;
   }
-`;
+`
 
 export const CarrerIntroduction = styled.p`
   font-size: 16px;
@@ -295,7 +292,7 @@ export const CarrerIntroduction = styled.p`
   @media screen and (max-width: 400px) {
     line-height: 17px;
   }
-`;
+`
 
 export const CarrerButtonBox = styled.button`
   display: flex;
@@ -311,14 +308,14 @@ export const CarrerButtonBox = styled.button`
   cursor: pointer;
   transition: 0.3s ease-in;
   transform: ${({ isTextOpen, isActive, id }) =>
-    isTextOpen === id && isActive ? "rotate(180deg)" : "rotate(0deg)"};
-`;
+    isTextOpen === id && isActive ? 'rotate(180deg)' : 'rotate(0deg)'};
+`
 
 export const CarrerArrow = styled(IoIosArrowDown)`
   color: #a85f3f;
   width: 25px;
   height: 25px;
-`;
+`
 
 export const Text = styled.div`
   width: 60%;
@@ -338,7 +335,7 @@ export const Text = styled.div`
     width: 80%;
     margin-top: 1.8rem;
   }
-`;
+`
 export const TextResponsibilities = styled.ul`
   width: 100%;
   height: 100%;
@@ -348,7 +345,7 @@ export const TextResponsibilities = styled.ul`
     margin-top: 5vh;
     margin-bottom: 3rem;
   }
-`;
+`
 export const ResponsibilitiesList = styled.li`
   width: 80%;
   height: 2vh;
@@ -361,4 +358,4 @@ export const ResponsibilitiesList = styled.li`
     height: 7vh;
     width: 100%;
   }
-`;
+`

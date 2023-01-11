@@ -1,6 +1,6 @@
-import { Grid, Typography, ThemeProvider } from "@mui/material";
-import CustomizedSteppers from "./StepperInquiry";
-import theme from "./InquiryThemeMedia";
+import { Grid, Typography, ThemeProvider } from '@mui/material'
+import CustomizedSteppers from './StepperInquiry'
+import theme from './InquiryThemeMedia'
 
 const Inquiry = () => {
   return (
@@ -9,24 +9,24 @@ const Inquiry = () => {
         container
         spacing={2}
         sx={{
-          flexDirection: { xxs: "column", md: "row" },
-          alignItems: "center",
-          position: "absolute",
-          top: { xxs: "20vh", xs: "15vh", md: "10vh" },
-          left: "0",
-          overflow: "hidden",
+          flexDirection: { xxs: 'column', md: 'row' },
+          alignItems: 'center',
+          position: 'absolute',
+          top: { xxs: '20vh', xs: '15vh', md: '10vh' },
+          left: '0',
+          overflow: 'hidden',
         }}
       >
         <Grid item xs={6}>
           <Typography
-            variant="h1"
+            variant='h1'
             sx={{
-              marginLeft: { xxs: "0", md: "20%" },
-              color: "#1d1d1b",
-              fontWeight: "600",
-              letterSpacing: "1px",
-              fontSize: { xxs: "30px", xs: "40px", sm: "80px", xl: "100px" },
-              fontFamily: "Usual",
+              marginLeft: { xxs: '0', md: '20%' },
+              color: '#1d1d1b',
+              fontWeight: '600',
+              letterSpacing: '1px',
+              fontSize: { xxs: '30px', xs: '40px', sm: '80px', xl: '100px' },
+              fontFamily: 'Usual',
             }}
           >
             Zapytanie
@@ -34,35 +34,35 @@ const Inquiry = () => {
         </Grid>
         <Grid item xs={6}>
           <Typography
-            variant="body1"
+            variant='body1'
             sx={{
-              fontFamily: "Usual",
-              letterSpacing: "1px",
-              textAlign: { xxs: "center", sm: "center", md: "start" },
-              width: { xxs: "100%", sm: "100%", md: "80%" },
-              fontSize: { xxs: "16px", sm: "16px", lg: "18px" },
+              fontFamily: 'Usual',
+              letterSpacing: '1px',
+              textAlign: { xxs: 'center', sm: 'center', md: 'start' },
+              width: { xxs: '100%', sm: '100%', md: '80%' },
+              fontSize: { xxs: '16px', sm: '16px', lg: '18px' },
             }}
           >
-            Formularz zapytania pozwoli{" "}
+            Formularz zapytania pozwoli{' '}
             <span
               style={{
-                color: "#a85f3f",
-                fontFamily: "Usual",
-                fontWeight: "bold",
+                color: '#a85f3f',
+                fontFamily: 'Usual',
+                fontWeight: 'bold',
               }}
             >
               w kilku prostych krokach
-            </span>{" "}
-            zebrać najważniejsze informacje na temat Twoich potrzeb. Dzięki temu{" "}
+            </span>{' '}
+            zebrać najważniejsze informacje na temat Twoich potrzeb. Dzięki temu{' '}
             <span
               style={{
-                color: "#a85f3f",
-                fontFamily: "Usual",
-                fontWeight: "600",
+                color: '#a85f3f',
+                fontFamily: 'Usual',
+                fontWeight: '600',
               }}
             >
               szybko
-            </span>{" "}
+            </span>{' '}
             przygotujemy dla Ciebie ofertę.
           </Typography>
         </Grid>
@@ -73,16 +73,16 @@ const Inquiry = () => {
           item
           xs={8}
           sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: "100%",
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '100%',
           }}
         >
           <CustomizedSteppers />
         </Grid>
       </Grid>
     </ThemeProvider>
-  );
-};
-export default Inquiry;
+  )
+}
+export default Inquiry

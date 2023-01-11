@@ -1,14 +1,14 @@
-import { NavLink as LinkR } from "react-router-dom";
-import { FaBars, FaFacebookF, FaInstagram } from "react-icons/fa";
-import styled from "styled-components";
+import { NavLink as LinkR } from 'react-router-dom'
+import { FaBars, FaFacebookF, FaInstagram } from 'react-icons/fa'
+import styled from 'styled-components'
 
-const shadow = "0px 10px 15px #e9e5e575";
+const shadow = '0px 10px 15px #e9e5e575'
 
 export const Nav = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  height: ${({ scrollY }) => (scrollY > 50 ? "100px" : "150px")};
+  height: ${({ scrollY }) => (scrollY > 50 ? '100px' : '150px')};
 
   display: flex;
   justify-content: center;
@@ -17,10 +17,10 @@ export const Nav = styled.nav`
   z-index: 1500;
   color: #1d1d1b;
   background-color: white;
-  box-shadow: ${({ scrollY }) => (scrollY > 50 ? shadow : "none")};
+  box-shadow: ${({ scrollY }) => (scrollY > 50 ? shadow : 'none')};
   transition: 0.4s ease-in-out;
-  position: ${({ scrollY }) => (scrollY > 50 ? "fixed" : "absolute")};
-`;
+  position: ${({ scrollY }) => (scrollY > 50 ? 'fixed' : 'absolute')};
+`
 
 export const Logo = styled.div`
   display: flex;
@@ -28,13 +28,13 @@ export const Logo = styled.div`
   align-items: center;
 
   width: 40%;
-`;
+`
 export const NavLogoLink = styled(LinkR)`
   font-size: 40px;
   color: #1d1d1b;
   text-decoration: none;
   font-weight: 700;
-`;
+`
 
 export const NavLink = styled(LinkR)`
   display: flex;
@@ -50,7 +50,7 @@ export const NavLink = styled(LinkR)`
   &.active {
     color: #a85f3f;
   }
-`;
+`
 
 export const Bars = styled(FaBars)`
   display: none;
@@ -71,7 +71,7 @@ export const Bars = styled(FaBars)`
     font-size: 25px;
     cursor: pointer;
   }
-`;
+`
 
 export const RightContainer = styled.div`
   display: flex;
@@ -81,19 +81,19 @@ export const RightContainer = styled.div`
   color: #1d1d1b;
 
   width: 40%;
-`;
+`
 
 export const NavBtn = styled.div`
   display: flex;
   align-items: center;
   color: #1d1d1b;
   font-size: 0.8rem;
-  display: ${({ scrollY }) => (scrollY > 50 ? "none" : "flex")};
+  display: ${({ scrollY }) => (scrollY > 50 ? 'none' : 'flex')};
 
   @media screen and (max-width: 929px) {
     display: none;
   }
-`;
+`
 
 export const NavBtnLink = styled.a`
   background: transparent;
@@ -113,7 +113,7 @@ export const NavBtnLink = styled.a`
   &:hover {
     color: #a85f3f;
   }
-`;
+`
 
 export const IconF = styled(FaFacebookF)`
   display: block;
@@ -125,7 +125,7 @@ export const IconF = styled(FaFacebookF)`
   @media screen and (max-width: 840px) {
     display: none;
   }
-`;
+`
 
 export const IconI = styled(FaInstagram)`
   display: block;
@@ -136,7 +136,7 @@ export const IconI = styled(FaInstagram)`
   @media screen and (max-width: 840px) {
     display: none;
   }
-`;
+`
 
 export const Language = styled.button`
   display: block;
@@ -149,7 +149,7 @@ export const Language = styled.button`
   width: 45px;
 
   padding: 0.72rem;
-  color: ${({ isActive }) => (isActive ? "#a85f3f" : "#1d1d1b")};
+  color: ${({ isActive }) => (isActive ? '#a85f3f' : '#1d1d1b')};
 
   &.active {
     color: #a85f3f;
@@ -157,7 +157,7 @@ export const Language = styled.button`
   @media screen and (max-width: 840px) {
     display: none;
   }
-`;
+`
 
 export const NavMenu = styled.div`
   display: flex;
@@ -166,4 +166,4 @@ export const NavMenu = styled.div`
   @media screen and (max-width: 929px) {
     display: none;
   }
-`;
+`

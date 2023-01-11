@@ -6,8 +6,8 @@ import {
   TeamBoxSpecialize,
   TeamBoxName,
   TeamBoxArticle,
-} from "./TeamElements";
-import members from "./MembersData";
+} from './TeamElements'
+import members from './MembersData'
 
 const Member = () => {
   const membersList = members.map((member) => (
@@ -23,8 +23,8 @@ const Member = () => {
         <TeamBoxArticle>{member.text}</TeamBoxArticle>
       </TeamSectionArticleContainer>
     </>
-  ));
-  return <>{membersList}</>;
-};
+  ))
+  return <>{membersList}</>
+}
 
-export default Member;
+export default Member

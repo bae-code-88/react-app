@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 //Header
 export const TeamHeader = styled.div`
@@ -12,7 +12,7 @@ export const TeamHeader = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-`;
+`
 
 export const TeamHeaderLeftContainer = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ export const TeamHeaderLeftContainer = styled.div`
 
   height: 100%;
   width: 40%;
-`;
+`
 //welcome text
 export const TeamHeaderLetter = styled.h1`
   position: absolute;
@@ -49,7 +49,7 @@ export const TeamHeaderLetter = styled.h1`
   @media screen and (max-width: 1024px) {
     display: none;
   }
-`;
+`
 
 export const TeamHeaderIntroduction = styled.h1`
   position: absolute;
@@ -85,7 +85,7 @@ export const TeamHeaderIntroduction = styled.h1`
     top: 45vh;
     font-size: 2.5rem;
   }
-`;
+`
 
 export const TeamHeaderText = styled.p`
   position: absolute;
@@ -122,7 +122,7 @@ export const TeamHeaderText = styled.p`
     font-size: 14px;
     line-height: 16px;
   }
-`;
+`
 //image
 export const TeamHeaderRightContainer = styled.div`
   display: flex;
@@ -136,7 +136,7 @@ export const TeamHeaderRightContainer = styled.div`
   @media screen and (max-width: 1280px) {
     width: 100%;
   }
-`;
+`
 
 export const TeamImageContainer = styled.div`
   position: absolute;
@@ -186,12 +186,12 @@ export const TeamImageContainer = styled.div`
     width: 80%;
     height: 50%;
   }
-`;
+`
 
 export const TeamHeaderImage = styled.img`
   width: 100%;
   height: 100%;
-`;
+`
 
 //Section
 
@@ -215,7 +215,7 @@ export const TeamSection = styled.article`
   @media screen and (max-width: 768px) {
     top: 72vh;
   }
-`;
+`
 
 //Section Introduction
 export const TeamSectionIntroduction = styled.p`
@@ -228,7 +228,7 @@ export const TeamSectionIntroduction = styled.p`
   @media screen and (max-width: 400px) {
     font-size: 14px;
   }
-`;
+`
 export const TeamSectionHeadLine = styled.p`
   font-size: 28px;
   color: #1d1d1b;
@@ -239,10 +239,10 @@ export const TeamSectionHeadLine = styled.p`
   @media screen and (max-width: 400px) {
     font-size: 20px;
   }
-`;
+`
 export const TeamSectionText = styled.p`
   font-size: 14px;
-`;
+`
 
 //Section Articles about members
 
@@ -289,7 +289,7 @@ export const TeamSectionArticleContainer = styled.div`
       right: 100%;
     }
   }
-`;
+`
 export const TeamSectionArticleBox = styled.div`
   display: flex;
   flex-direction: row;
@@ -306,7 +306,7 @@ export const TeamSectionArticleBox = styled.div`
   @media screen and (max-width: 400px) {
     height: 25%;
   }
-`;
+`
 
 export const TeamBoxImage = styled.img`
   width: 60%;
@@ -323,7 +323,7 @@ export const TeamBoxImage = styled.img`
     width: 50%;
     height: 100%;
   }
-`;
+`
 export const TeamBoxTextContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -332,7 +332,7 @@ export const TeamBoxTextContainer = styled.div`
   width: 50%;
   height: 50%;
   // background-color: coral;
-`;
+`
 export const TeamBoxSpecialize = styled.p`
   font-size: 16px;
   color: #a85f3f;
@@ -340,10 +340,10 @@ export const TeamBoxSpecialize = styled.p`
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 20px;
-`;
+`
 export const TeamBoxName = styled.p`
   font-size: 28px;
-`;
+`
 
 export const TeamBoxArticle = styled.p`
   font-size: 14px;
@@ -358,4 +358,4 @@ export const TeamBoxArticle = styled.p`
   @media screen and (max-width: 400px) {
     line-height: 17px;
   }
-`;
+`

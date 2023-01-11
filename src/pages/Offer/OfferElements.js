@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const OfferHeader = styled.div`
   position: absolute;
@@ -10,7 +10,7 @@ export const OfferHeader = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-`;
+`
 
 export const OfferHeaderLeft = styled.div`
   display: flex;
@@ -19,7 +19,7 @@ export const OfferHeaderLeft = styled.div`
   align-self: center;
   height: 100%;
   width: 40%;
-`;
+`
 
 export const OfferHeaderLetter = styled.h1`
   position: absolute;
@@ -43,7 +43,7 @@ export const OfferHeaderLetter = styled.h1`
   @media screen and (max-width: 1024px) {
     display: none;
   }
-`;
+`
 
 export const OfferHeaderIntroduction = styled.h1`
   position: absolute;
@@ -78,7 +78,7 @@ export const OfferHeaderIntroduction = styled.h1`
   @media screen and (max-width: 500px) {
     top: 53%;
   }
-`;
+`
 
 export const OfferHeaderText = styled.p`
   position: absolute;
@@ -114,7 +114,7 @@ export const OfferHeaderText = styled.p`
     top: 65%;
     font-size: 16px;
   }
-`;
+`
 
 export const ImageContainer = styled.div`
   position: absolute;
@@ -164,11 +164,11 @@ export const ImageContainer = styled.div`
     width: 80%;
     height: 50%;
   }
-`;
+`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-`;
+`
 
 // Introduction
 
@@ -192,7 +192,7 @@ export const OfferIntroduction = styled.article`
   @media screen and (max-width: 500px) {
     top: 35vh;
   }
-`;
+`
 
 export const OfferStripeIntroduction = styled.div`
   position: absolute;
@@ -216,7 +216,7 @@ export const OfferStripeIntroduction = styled.div`
   @media screen and (max-width: 640px) {
     display: none;
   }
-`;
+`
 
 export const OfferIntroductionHeadline = styled.p`
 position:absolute;
@@ -250,7 +250,7 @@ color:#a85f3f;
     top:50vh;
     font-size:14px; 
 
-`;
+`
 
 export const OfferIntro = styled.h1`
   position: absolute;
@@ -282,7 +282,7 @@ export const OfferIntro = styled.h1`
     top: 55vh;
     font-size: 20px;
   }
-`;
+`
 
 export const OfferText = styled.p`
   position: absolute;
@@ -313,7 +313,7 @@ export const OfferText = styled.p`
   @media screen and (max-width: 500px) {
     display: none;
   }
-`;
+`
 
 // Article
 export const OfferArticleContainer = styled.article`
@@ -342,7 +342,7 @@ export const OfferArticleContainer = styled.article`
     height: 290vh;
     top: 65vh;
   }
-`;
+`
 
 export const OfferArticleLeft = styled.div`
   position: absolute;
@@ -366,7 +366,7 @@ export const OfferArticleLeft = styled.div`
   @media screen and (max-width: 360px) {
     top: 0;
   }
-`;
+`
 
 export const OfferArticleLeftImageContainer = styled.div`
   position: absolute;
@@ -395,12 +395,12 @@ export const OfferArticleLeftImageContainer = styled.div`
     width: 80%;
     height: 40%;
   }
-`;
+`
 
 export const ImageLeft = styled.img`
   width: 100%;
   height: 100%;
-`;
+`
 export const OfferArticleLeftContainer = styled.div`
   position: absolute;
   top: 0;
@@ -421,14 +421,14 @@ export const OfferArticleLeftContainer = styled.div`
     align-items: flex-start;
     top: 0;
   }
-`;
+`
 export const OfferArticleLeftHeadline = styled.h1`
   font-size: 3rem;
   margin-bottom: 2rem;
   @media screen and (max-width: 500px) {
     font-size: 2rem;
   }
-`;
+`
 export const OfferArticleLeftText = styled.p`
   font-size: 18px;
   line-height: 35px;
@@ -436,7 +436,7 @@ export const OfferArticleLeftText = styled.p`
   @media screen and (max-width: 500px) {
     font-size: 16px;
   }
-`;
+`
 
 export const OfferArticleRight = styled.div`
   position: absolute;
@@ -453,7 +453,7 @@ export const OfferArticleRight = styled.div`
   @media screen and (max-width: 500px) {
     top: 165vh;
   
-`;
+`
 export const OfferArticleRightImageContainer = styled.div`
   position: absolute;
   top: 0;
@@ -480,7 +480,7 @@ export const OfferArticleRightImageContainer = styled.div`
   @media screen and (max-width: 360px) {
     display: none;
   }
-`;
+`
 export const ImageRight = styled.img`
   width: 95%;
   height: 100%;
@@ -488,7 +488,7 @@ export const ImageRight = styled.img`
   @media screen and (max-width: 500px) {
     display: none;
   }
-`;
+`
 export const OfferArticleRightContainer = styled.div`
   position: absolute;
   top: 0;
@@ -515,7 +515,7 @@ export const OfferArticleRightContainer = styled.div`
     top: 0;
     align-items: flex-start;
   }
-`;
+`
 
 export const OfferArticleRightHeadline = styled.h1`
   font-size: 3rem;
@@ -523,7 +523,7 @@ export const OfferArticleRightHeadline = styled.h1`
   @media screen and (max-width: 500px) {
     font-size: 2rem;
   }
-`;
+`
 
 export const OfferArticleRightText = styled.p`
   font-size: 18px;
@@ -532,4 +532,4 @@ export const OfferArticleRightText = styled.p`
   @media screen and (max-width: 500px) {
     font-size: 16px;
   }
-`;
+`
