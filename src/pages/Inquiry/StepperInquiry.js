@@ -154,6 +154,7 @@ const CustomizedSteppers = () => {
 
                 <InquiryButtons
                   step={step}
+                  stepType={stepType}
                   handleBack={handleBack}
                   handleChange={handleChange}
                   handleNext={handleNext}

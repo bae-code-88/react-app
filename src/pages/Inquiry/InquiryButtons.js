@@ -40,39 +40,42 @@ const InquiryButtons = ({
   handleChange,
   value,
   setStepType,
+  stepType,
 }) => {
-  const buttonList = Object.keys(step.buttons).map((buttonKey, index) => {
-    return step.buttons[buttonKey].map((buttonText) => (
-      <Button
-        variant='outlined'
-        type='button'
-        key={index}
-        activestep={activeStep}
-        onClick={() => {
-          if (buttonText === 'Komercyjnym') {
-            setStepType('commercial')
-          } else if (buttonText === 'Indywidualnym') {
-            setStepType('individual')
-          }
-          handleNext()
-        }}
-        sx={{
-          mr: 1,
-          color: '#a85f3f',
-          border: '1px solid #a85f3f',
-          borderRadius: '0',
-          width: { xxs: '120px', sm: '20%', md: '190px' },
-          lineHeight: '25px',
-          backgroundColor: 'transparent',
-          fontFamily: 'Usual',
-          fontSize: '14px',
-          textTransform: 'none',
-        }}
-      >
-        {step.id === step.length - 1 ? 'Wyślij' : buttonText}
-      </Button>
-    ))
-  })
+  const buttonList = Object.keys(step.buttons)
+    .filter((buttonKey) => (stepType ? [stepType, 'all'].includes(buttonKey) : true))
+    .map((buttonKey, index) => {
+      return step.buttons[buttonKey].map((buttonText) => (
+        <Button
+          variant='outlined'
+          type='button'
+          key={index}
+          activestep={activeStep}
+          onClick={() => {
+            if (buttonText === 'Komercyjnym') {
+              setStepType('commercial')
+            } else if (buttonText === 'Indywidualnym') {
+              setStepType('individual')
+            }
+            handleNext()
+          }}
+          sx={{
+            mr: 1,
+            color: '#a85f3f',
+            border: '1px solid #a85f3f',
+            borderRadius: '0',
+            width: { xxs: '120px', sm: '20%', md: '190px' },
+            lineHeight: '25px',
+            backgroundColor: 'transparent',
+            fontFamily: 'Usual',
+            fontSize: '14px',
+            textTransform: 'none',
+          }}
+        >
+          {step.id === step.length - 1 ? 'Wyślij' : buttonText}
+        </Button>
+      ))
+    })
 
   return (
     <ThemeProvider theme={theme}>
