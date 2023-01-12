@@ -95,7 +95,7 @@ const CustomizedSteppers = () => {
                 width: '80vw',
                 marginTop: { xxs: '0px', sm: '10px' },
                 marginLeft: { xxs: '0px', sm: '0px' },
-                // backgroundColor: "green",
+                // backgroundColor: 'green',
               }}
             >
               <InquiryStepLabel step={step} id={id} />
@@ -112,8 +112,8 @@ const CustomizedSteppers = () => {
                   border: 'none',
                   display: 'flex',
                   alignItems: { xxs: 'center' },
-                  justifyContent: { xxs: 'center', sm: 'flex-end' },
-                  // backgroundColor: "violet",
+                  justifyContent: { xxs: 'center', sm: 'flex-start' },
+                  // backgroundColor: 'violet',
                   // overflow: "hidden",
                 }}
               >
@@ -123,8 +123,7 @@ const CustomizedSteppers = () => {
                     width: { xxs: '100%', sm: '50%' },
                     boxSizing: 'border-box',
                     display: 'flex',
-                    margin: '0px',
-                    // backgroundColor: "pink",
+                    // backgroundColor: 'pink',
                   }}
                 >
                   <Typography

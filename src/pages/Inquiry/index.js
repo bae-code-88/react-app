@@ -1,5 +1,5 @@
 import { Grid, Typography, ThemeProvider } from '@mui/material'
-import CustomizedSteppers from './StepperInquiry'
+import CustomizedSteppers from './CustomizedSteppers'
 import theme from './InquiryThemeMedia'
 
 const Inquiry = () => {
