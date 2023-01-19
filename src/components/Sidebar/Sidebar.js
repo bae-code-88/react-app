@@ -31,25 +31,25 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to='/' exact={true} activeStyle>
+          <SidebarLink to='/' exact={true} activeStyle={{ color: '#a85f3f' }}>
             Strona Główna
           </SidebarLink>
-          <SidebarLink to='/oferta' activeStyle>
+          <SidebarLink to='/oferta' activeStyle={{ color: '#a85f3f' }}>
             {t('Oferta')}
           </SidebarLink>
-          <SidebarLink to='/zapytanie' activeStyle>
+          <SidebarLink to='/zapytanie' activeStyle={{ color: '#a85f3f' }}>
             {t('Zapytanie')}
           </SidebarLink>
-          <SidebarLink to='/realizacje' activeStyle>
+          <SidebarLink to='/realizacje' activeStyle={{ color: '#a85f3f' }}>
             {t('Realizacje')}
           </SidebarLink>
-          <SidebarLink to='/zespół' activeStyle>
+          <SidebarLink to='/zespół' activeStyle={{ color: '#a85f3f' }}>
             {t('Zespół')}
           </SidebarLink>
-          <SidebarLink to='/kariera' activeStyle>
+          <SidebarLink to='/kariera' activeStyle={{ color: '#a85f3f' }}>
             {t('Kariera')}
           </SidebarLink>
-          <SidebarLink to='/kontakt' activeStyle>
+          <SidebarLink to='/kontakt' activeStyle={{ color: '#a85f3f' }}>
             {t('Kontakt')}
           </SidebarLink>
         </SidebarMenu>

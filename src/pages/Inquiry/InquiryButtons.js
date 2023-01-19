@@ -43,7 +43,7 @@ const InquiryButtons = ({
   stepType,
 }) => {
   const buttonList = Object.keys(step.buttons)
-    .filter((buttonKey) => (stepType ? [stepType, 'all'].includes(buttonKey) : true))
+    .filter((buttonKey) => (stepType ? [stepType, 'allBtn'].includes(buttonKey) : true))
     .map((buttonKey, index) => {
       return step.buttons[buttonKey].map((buttonText) => (
         <Button
@@ -53,9 +53,9 @@ const InquiryButtons = ({
           activestep={activeStep}
           onClick={() => {
             if (buttonText === 'Komercyjnym') {
-              setStepType('commercial')
+              setStepType('commercialBtn')
             } else if (buttonText === 'Indywidualnym') {
-              setStepType('individual')
+              setStepType('individualBtn')
             }
             handleNext()
           }}
@@ -224,9 +224,3 @@ const InquiryButtons = ({
   )
 }
 export default InquiryButtons
-
-// (Array.isArray(step.buttons) ? step.buttons : Object.keys(step.buttons))
-
-// Object.keys(step.buttons) => ["individual", "commercial"]
-// step.buttons[2]
-// step.buttons["individual"]

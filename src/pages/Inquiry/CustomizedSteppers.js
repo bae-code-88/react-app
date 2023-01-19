@@ -57,7 +57,7 @@ const CustomizedSteppers = () => {
   }
 
   const handleReset = () => {
-    setActiveStep(0)
+    setActiveStep(1)
     console.log(activeStep)
   }
 
@@ -91,7 +91,7 @@ const CustomizedSteppers = () => {
                 display: 'flex',
                 flexDirection: { xxs: 'column', sm: 'row' },
                 alignItems: { xxs: 'center' },
-                justifyContent: { sm: 'center' },
+                justifyContent: { sm: 'center', md: 'space-between' },
                 width: '80vw',
                 marginTop: { xxs: '0px', sm: '10px' },
                 marginLeft: { xxs: '0px', sm: '0px' },
@@ -163,10 +163,14 @@ const CustomizedSteppers = () => {
               </StepContent>
             </Step>
           ))}
+          <InquiryFinishedSteps
+            activeStep={activeStep}
+            id={steps.id}
+            handleReset={handleReset}
+            steps={steps}
+          />
         </Stepper>
       </ThemeProvider>
-
-      <InquiryFinishedSteps active={activeStep} handleReset={handleReset} steps={steps} />
     </Stack>
   )
 }

@@ -3,12 +3,12 @@ import Box from '@mui/material/Box'
 import Paper from '@mui/material/Paper'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
-// import AiOutlineCheck from "react-icons/ai";
+// import FaCheck from 'react-icons/fa'
 
 const InquiryFinishedSteps = ({ activeStep, handleReset, steps }) => {
   return (
     <>
-      {activeStep === steps.length && (
+      {activeStep === steps.length + 1 && (
         <Paper square elevation={0} sx={{ p: 3, width: '100%' }}>
           <Box
             sx={{
@@ -21,7 +21,7 @@ const InquiryFinishedSteps = ({ activeStep, handleReset, steps }) => {
               justifyContent: 'center',
             }}
           >
-            {/* <AiOutlineCheck /> */}
+            {/* <FaCheck /> */}
           </Box>
           <Typography sx={{ fontFamily: 'Usual', textAlign: 'center' }}>
             Wszystkie kroki pomyślnie zakończone!<br></br> Zapytanie zostało wysłane.
