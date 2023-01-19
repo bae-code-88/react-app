@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import {
   ContactBox,
   ContactLeftContainer,
@@ -25,17 +26,15 @@ import {
 import ContactForm from './ContactForm'
 import ContactMap from './ContactMap'
 
-const Contact = () => {
+const Contact = (props) => {
+  const { t } = useTranslation()
   return (
     <>
       <ContactBox>
         <ContactLeftContainer>
-          <ContactStyledLetter>K</ContactStyledLetter>
-          <ContactMainIntro>Kontakt</ContactMainIntro>
-          <ContactMainInfo>
-            Nasz zespół pozostaje do Twojej dyspozycji, skontaktuj się z nami
-            <br></br>a znajdziemy idealne rozwiązanie.
-          </ContactMainInfo>
+          <ContactStyledLetter>{t('LiteraKariera')}</ContactStyledLetter>
+          <ContactMainIntro>{t('Kontakt')}</ContactMainIntro>
+          <ContactMainInfo>{t('Kontakttxt')}</ContactMainInfo>
 
           <ContactIcons>
             <ContactIconBox>
@@ -48,9 +47,9 @@ const Contact = () => {
           </ContactIcons>
 
           <ContactAdressRegistersInformation>
-            <ContactTitleAdress>Adres pracowni</ContactTitleAdress>
+            <ContactTitleAdress>{t('ContactTitleAdress')}</ContactTitleAdress>
             <ContactAdress>ul. Nieznana 8 bud.13, 04-690 Warszawa</ContactAdress>
-            <RegisterInformationTitle>Dane rejestrowe</RegisterInformationTitle>
+            <RegisterInformationTitle>{t('RegisterInformationTitle')}</RegisterInformationTitle>
             <RegisterInformationName>NoName sp.z o.o.</RegisterInformationName>
             <RegisterInformationAdress>
               ul. Nieznana 8 bud.13, 04-690 Warszawa

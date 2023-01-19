@@ -1,8 +1,10 @@
+import { useTranslation } from 'react-i18next'
 import { Grid, Typography, ThemeProvider } from '@mui/material'
 import CustomizedSteppers from './CustomizedSteppers'
 import theme from './InquiryThemeMedia'
 
-const Inquiry = () => {
+const Inquiry = (props) => {
+  const { t } = useTranslation()
   return (
     <ThemeProvider theme={theme}>
       <Grid
@@ -29,7 +31,7 @@ const Inquiry = () => {
               fontFamily: 'Usual',
             }}
           >
-            Zapytanie
+            {t('Zapytanie')}
           </Typography>
         </Grid>
         <Grid item xs={6}>
@@ -43,7 +45,7 @@ const Inquiry = () => {
               fontSize: { xxs: '16px', sm: '16px', lg: '18px' },
             }}
           >
-            Formularz zapytania pozwoli{' '}
+            {t('Zapytanietxt1')}{' '}
             <span
               style={{
                 color: '#a85f3f',
@@ -51,9 +53,9 @@ const Inquiry = () => {
                 fontWeight: 'bold',
               }}
             >
-              w kilku prostych krokach
+              {t('Zapytanietxt2')}
             </span>{' '}
-            zebrać najważniejsze informacje na temat Twoich potrzeb. Dzięki temu{' '}
+            {t('Zapytanietxt3')}{' '}
             <span
               style={{
                 color: '#a85f3f',
@@ -61,9 +63,9 @@ const Inquiry = () => {
                 fontWeight: '600',
               }}
             >
-              szybko
+              {t('Zapytanietxt4')}
             </span>{' '}
-            przygotujemy dla Ciebie ofertę.
+            {t('Zapytanietxt5')}
           </Typography>
         </Grid>
         <Grid item xs={2}>

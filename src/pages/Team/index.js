@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import {
   TeamHeader,
   TeamHeaderLeftContainer,
@@ -15,18 +16,15 @@ import {
 import team from '../../images/community-concept-with-hands-people (1).jpg'
 import Member from './Member'
 
-const Team = () => {
+const Team = (props) => {
+  const { t } = useTranslation()
   return (
     <>
       <TeamHeader>
         <TeamHeaderLeftContainer>
-          <TeamHeaderLetter>Z</TeamHeaderLetter>
-          <TeamHeaderIntroduction>Zespół</TeamHeaderIntroduction>
-          <TeamHeaderText>
-            {' '}
-            Zespół indywidualności, w którym każdy wnosi coś wyjątkowego do pracy studia. Poznaj nas
-            lepiej.
-          </TeamHeaderText>
+          <TeamHeaderLetter>{t('LiteraZespół')}</TeamHeaderLetter>
+          <TeamHeaderIntroduction>{t('Zespół')}</TeamHeaderIntroduction>
+          <TeamHeaderText>{t('Zespółtxt')}</TeamHeaderText>
         </TeamHeaderLeftContainer>
 
         <TeamHeaderRightContainer>
@@ -37,9 +35,9 @@ const Team = () => {
       </TeamHeader>
 
       <TeamSection>
-        <TeamSectionIntroduction>Poznaj Nas</TeamSectionIntroduction>
-        <TeamSectionHeadLine>Architekci i Projektanci</TeamSectionHeadLine>
-        <TeamSectionText>Wybierz swojego specjalistę</TeamSectionText>
+        <TeamSectionIntroduction>{t('TeamSectionIntroduction')}</TeamSectionIntroduction>
+        <TeamSectionHeadLine>{t('TeamSectionHeadLine')}</TeamSectionHeadLine>
+        <TeamSectionText>{t('TeamSectionText')}</TeamSectionText>
         <Member />
       </TeamSection>
     </>

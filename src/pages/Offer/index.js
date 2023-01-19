@@ -51,22 +51,15 @@ const Offer = (props) => {
 
       <OfferIntroduction>
         <OfferStripeIntroduction></OfferStripeIntroduction>
-        <OfferIntroductionHeadline>To dla nas Ważne</OfferIntroductionHeadline>
-        <OfferIntro>
-          Dbamy, aby nasze wnętrza były nie tylko piękne, ale przede wszystkim przemyślane i
-          funkcjonalne.
-        </OfferIntro>
-        <OfferText>
-          Realizujemy projekty zarówno mieszkalne, jak i biurowe. Cenimy oryginalność, wykorzystanie
-          nowoczesnych trendów, a naszym priorytetem jest zrozumienie potrzeb Klienta, by tworzyć
-          przestrzenie, w których chce się przebywać.
-        </OfferText>
+        <OfferIntroductionHeadline>{t('HomeWprowadzenie')}</OfferIntroductionHeadline>
+        <OfferIntro>{t('HomeHeadline')}</OfferIntro>
+        <OfferText>{t('HomeText')}</OfferText>
       </OfferIntroduction>
 
       <OfferArticleContainer>
         <OfferArticleLeft>
           <OfferArticleLeftContainer>
-            <OfferArticleLeftHeadline>Projektujemy</OfferArticleLeftHeadline>
+            <OfferArticleLeftHeadline>{t('OfferArticleLeftHeadline')}</OfferArticleLeftHeadline>
             <OfferArticleLeftText>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
               has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -85,7 +78,7 @@ const Offer = (props) => {
             <ImageRight src={img13}></ImageRight>
           </OfferArticleRightImageContainer>
           <OfferArticleRightContainer>
-            <OfferArticleRightHeadline>Realizujemy</OfferArticleRightHeadline>
+            <OfferArticleRightHeadline>{t('OfferArticleRightHeadline')}</OfferArticleRightHeadline>
             <OfferArticleRightText>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
               has been the industry's standard dummy text ever since the 1500s, when an unknown

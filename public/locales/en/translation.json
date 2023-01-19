@@ -1,23 +1,61 @@
-{   "Start":"Home",
-    "Oferta":"Offer",
-    "Zapytanie":"Inquiry",
-    "Realizacje":"Realization",
-    "Zespół":"Team",
-    "Kariera":"Career",
-    "Kontakt":"Contact",
+{
+  "Start": "Home",
+  "Oferta": "Offer",
+  "Zapytanie": "Inquiry",
+  "Realizacje": "Realization",
+  "Zespół": "Team",
+  "Kariera": "Career",
+  "Kontakt": "Contact",
 
-    "LiteraZespół":"T",
-    "LiteraKariera":"C",
+  "LiteraZespół": "T",
+  "LiteraKariera": "C",
 
-    "Ofertatxt":"We deal with comprehensive implementation of residential interiors and services, taking into account functional solutions and the latest design trends",
-    "Realizacjetxt":"We implement both private and commercial projects, in each case, focusing on original solutions in line with the latest trends.We invite you to see the gallery of our interiors.",
+  "Ofertatxt": "We deal with comprehensive implementation of residential interiors and services, taking into account functional solutions and the latest design trends",
+  "Realizacjetxt": "We implement both private and commercial projects, in each case, focusing on original solutions in line with the latest trends.We invite you to see the gallery of our interiors.",
 
-    "Zespółtxt": "Team of experienced architects, PRW Design specializes in comprehensive implementation of both private and public interiors. At every stage of activities - from the first versions of the design to the last touches of the finish - we use original solutions of the highest functional and aesthetic quality, in line with the needs of customers and the latest interior trends.",
+  "Zespółtxt": "Team of experienced architects, specializes in comprehensive implementation of both private and public interiors. At every stage of activities - from the first versions of the design to the last touches of the finish - we use original solutions of the highest functional and aesthetic quality, in line with the needs of customers and the latest interior trends.",
 
-    "Karieratxt":"We are constantly looking for new talents for our team. Do you want to try? Apply!",
+  "Zapytanietxt1": "The inquiry form will allow you to collect",
+  "Zapytanietxt2": "the most important information",
+  "Zapytanietxt3": "in a few simple steps. Thanks to this",
+  "Zapytanietxt4": "we will quickly prepare",
+  "Zapytanietxt5": "an offer for you.",
 
-    "HomeWprowadzenie":"THIS IS IMPORTANT TO US",
-    "HomeHeadline":"We make sure that our interiors are not only beautiful, but above all thoughtful and functional.",
-    "HomeText":"We implement both residential and office projects. We value originality, use of modern trends, and our priority is to understand the client's needs in order to create spaces in which you want to stay.",
-    "HomeButtonOffer":"Check the Offer"
+  "Karieratxt": "We are constantly looking for new talents for our team. Do you want to try? Apply!",
+
+  "Kontakttxt": "Our team remains at your disposal, please contact us and we will find the perfect solution.",
+
+  "HomeHeaderTextP": "Project",
+  "HomeHeaderTextR": "Realization",
+  "HomeHeaderTextW": "Interiors",
+  "HomeWprowadzenie": "THIS IS IMPORTANT TO US",
+  "HomeHeadline": "We make sure that our interiors are not only beautiful, but above all thoughtful and functional.",
+  "HomeText": "We implement both residential and office projects. We value originality, use of modern trends, and our priority is to understand the client's needs in order to create spaces in which you want to stay.",
+  "HomeButtonOffer": "Check the Offer",
+  "HomeIntroductionSelected": "SELECTED",
+  "HomeIntroductionSelectedRealizations": "Realizations",
+  "HomeGalleryButtonText": "More realizations",
+
+  "OfferArticleLeftHeadline": "We design",
+  "OfferArticleRightHeadline": "We implement",
+
+  "RealizationSectionIntroduction": "Designs",
+  "RealizationButtonAll": "All designs",
+  "RealizationButtonPrivate": "Private",
+  "RealizationButtonCommercial": "Commercial",
+
+  "TeamSectionIntroduction": "Meet us",
+  "TeamSectionHeadLine": "Architects and Designers",
+  "TeamSectionText": "Choose your specialist",
+
+  "ContactFormBoxTitle": "Leave a message",
+  "ContactFormBoxText": "We are waiting for your message.",
+  "ContactFormInputName": "Name and Surname",
+  "ContactFormInputPhone": "Phone number",
+  "ContactFormInputMessage": "Message",
+  "ContactFormButton": "Send",
+  "ContactTitleAdress": "Studio address",
+  "RegisterInformationTitle": "Registration data",
+
+  "MapPopup": "We are here!"
 }

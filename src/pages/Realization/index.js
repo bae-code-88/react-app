@@ -46,25 +46,27 @@ const Realization = () => {
         </RealizationHeaderRightContainer>
       </RealizationHeader>
       <RealizationSection>
-        <RealizationSectionIntroduction>Projekty</RealizationSectionIntroduction>
+        <RealizationSectionIntroduction>
+          {t('RealizationSectionIntroduction')}
+        </RealizationSectionIntroduction>
 
         <RealizationButtonContainer>
           <RealizationButton isActive={isActive} name='all' onClick={() => setActive('all')}>
-            Wszystkie
+            {t('RealizationButtonAll')}
           </RealizationButton>
           <RealizationButton
             isActive={isActive}
             name='private'
             onClick={() => setActive('private')}
           >
-            Prywatne
+            {t('RealizationButtonPrivate')}
           </RealizationButton>
           <RealizationButton
             isActive={isActive}
             name='commercial'
             onClick={() => setActive('commercial')}
           >
-            Komercyjne
+            {t('RealizationButtonCommercial')}
           </RealizationButton>
         </RealizationButtonContainer>
 

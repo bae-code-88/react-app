@@ -50,9 +50,9 @@ const Home = (props) => {
   return (
     <>
       <HomeHeaderLeftContainer>
-        <HomeHeaderTextP>Projekt</HomeHeaderTextP>
-        <HomeHeaderTextR>Realizacja</HomeHeaderTextR>
-        <HomeHeaderTextW>Wnętrz</HomeHeaderTextW>
+        <HomeHeaderTextP>{t('HomeHeaderTextP')}</HomeHeaderTextP>
+        <HomeHeaderTextR>{t('HomeHeaderTextR')}</HomeHeaderTextR>
+        <HomeHeaderTextW>{t('HomeHeaderTextW')}</HomeHeaderTextW>
         <HomeHeaderLetterP>{letters[0]}</HomeHeaderLetterP>
         <HomeHeaderLetterR>{letters[1]}</HomeHeaderLetterR>
         <HomeHeaderLetterW>{letters[2]}</HomeHeaderLetterW>
@@ -87,8 +87,10 @@ const Home = (props) => {
       </HomeArticle>
 
       <HomeGallery>
-        <HomeGalleryIntroduction>WYBRANE</HomeGalleryIntroduction>
-        <HomeGalleryIntroduction>Realizacje</HomeGalleryIntroduction>
+        <HomeGalleryIntroduction>{t('HomeIntroductionSelected')}</HomeGalleryIntroduction>
+        <HomeGalleryIntroduction>
+          {t('HomeIntroductionSelectedRealizations')}
+        </HomeGalleryIntroduction>
 
         <GalleryImageContainer>
           <GalleryImage src={proj1}></GalleryImage>
@@ -100,7 +102,7 @@ const Home = (props) => {
         <GalleryStripe></GalleryStripe>
         <GalleryLine></GalleryLine>
         <HomeGalleryButtonContainer>
-          <HomeGalleryButton href='/realizacje'>Więcej realizacji</HomeGalleryButton>
+          <HomeGalleryButton href='/realizacje'>{t('HomeGalleryButtonText')}</HomeGalleryButton>
         </HomeGalleryButtonContainer>
       </HomeGallery>
     </>

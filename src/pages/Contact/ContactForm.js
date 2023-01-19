@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { useRef } from 'react'
 import {
   ContactFormBoxTitle,
@@ -9,7 +10,8 @@ import {
 } from './ContactElements'
 import emailjs from '@emailjs/browser'
 
-const ContactForm = () => {
+const ContactForm = (props) => {
+  const { t } = useTranslation()
   const form = useRef()
 
   const sendEmail = (e) => {
@@ -27,15 +29,25 @@ const ContactForm = () => {
   }
   return (
     <>
-      <ContactFormBoxTitle>Zostaw wiadomość</ContactFormBoxTitle>
-      <ContactFormBoxText>Czekamy na Twoją wiadomość.</ContactFormBoxText>
+      <ContactFormBoxTitle>{t('ContactFormBoxTitle')}</ContactFormBoxTitle>
+      <ContactFormBoxText>{t('ContactFormBoxText')}</ContactFormBoxText>
       <ContactFormBox name='message' ref={form} onSubmit={sendEmail}>
-        <ContactFormInput type='text' placeholder='Imię i nazwisko' name='user_name' />
-        <ContactFormInput type='number' placeholder='Telefon' name='user_phone' />
+        <ContactFormInput type='text' placeholder={t('ContactFormInputName')} name='user_name' />
+        <ContactFormInput
+          type='number'
+          placeholder={t('ContactFormInputPhone')}
+          name='user_phone'
+        />
         <ContactFormInput type='email' placeholder='E-mail' required />
-        <ContactMessageBox type='text' name='message' placeholder='Wiadomość' rows='5' cols='60' />
+        <ContactMessageBox
+          type='text'
+          name='message'
+          placeholder={t('ContactFormInputMessage')}
+          rows='5'
+          cols='60'
+        />
         <ContactFormButton type='submit' value='Send'>
-          Wyślij
+          {t('ContactFormButton')}
         </ContactFormButton>
       </ContactFormBox>
     </>

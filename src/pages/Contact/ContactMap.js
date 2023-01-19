@@ -1,7 +1,9 @@
+import { useTranslation } from 'react-i18next'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 const Mapa = () => {
   const position = [52.211282, 21.147641]
+  const { t }=useTranslation()
 
   return (
     <>
@@ -16,7 +18,7 @@ const Mapa = () => {
           url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
         />
         <Marker position={position}>
-          <Popup>Tutaj Jesteśmy!</Popup>
+          <Popup>{t("MapPopup")}</Popup>
         </Marker>
       </MapContainer>
     </>

@@ -1,21 +1,60 @@
-{   "Start":"Start",
-    "Oferta":"Oferta",
-    "Zapytanie":"Zapytanie",
-    "Realizacje":"Realizacje",
-    "Zespół":"Zespół",
-    "Kariera":"Kariera",
-    "Kontakt":"Kontakt",
+{
+  "Start": "Start",
+  "Oferta": "Oferta",
+  "Zapytanie": "Zapytanie",
+  "Realizacje": "Realizacje",
+  "Zespół": "Zespół",
+  "Kariera": "Kariera",
+  "Kontakt": "Kontakt",
 
-    "LiteraZespół":"Z",
-    "LiteraKariera":"K",
+  "LiteraZespół": "Z",
+  "LiteraKariera": "K",
 
-    "Ofertatxt":"Zajmujemy się kompleksową realizacją wnętrz mieszkalnych i usługowych z uwzględnieniem funkcjonalnych rozwiązań i najnowszysch trendów wzorniczych",
-    "Realizacjetxt":"Realizujemy zarówno projekty prywatne, jak i komercyjne, w każdym porzypadku stawiając na oryginalne rozwiązania zgodne z najnowszymi trendami. Zapraszamy do zapoznania się z galerią naszych wnętrz.",
-    "Zespółtxt": "Zespół doświadczonych architektów PRW Design specjalizuje się w kompleksowej realizacji wnętrz zarówno prywatnych, jak i użyteczności publicznej. Na każdym etapie działań – od pierwszych wersji projektu po ostatnie szlify wykończenia – stosujemy oryginalne rozwiązania o najwyższej jakości funkcjonalnej i estetycznej, pozostające w zgodzie z potrzebami klientów oraz najnowszymi tendencjami wnętrzarskimi.",
-    "Karieratxt":" Cały czas szukamy nowych talentów do naszego zespołu.Chcesz spróbować? Aplikuj !",
+  "Ofertatxt": "Zajmujemy się kompleksową realizacją wnętrz mieszkalnych i usługowych z uwzględnieniem funkcjonalnych rozwiązań i najnowszysch trendów wzorniczych",
+  "Realizacjetxt": "Realizujemy zarówno projekty prywatne, jak i komercyjne, w każdym porzypadku stawiając na oryginalne rozwiązania zgodne z najnowszymi trendami. Zapraszamy do zapoznania się z galerią naszych wnętrz.",
+  "Zespółtxt": "Zespół doświadczonych architektów, specjalizuje się w kompleksowej realizacji wnętrz zarówno prywatnych, jak i użyteczności publicznej. Na każdym etapie działań – od pierwszych wersji projektu po ostatnie szlify wykończenia – stosujemy oryginalne rozwiązania o najwyższej jakości funkcjonalnej i estetycznej, pozostające w zgodzie z potrzebami klientów oraz najnowszymi tendencjami wnętrzarskimi.",
 
-    "HomeWprowadzenie":"TO DLA NAS WAŻNE",
-    "HomeHeadline":"Dbamy, aby nasze wnętrza były nie tylko piękne, ale przede wszystkim przemyślane i funkcjonalne.",
-    "HomeText":"Realizujemy projekty zarówno mieszkalne, jak i biurowe. Cenimy oryginalność, wykorzystanie nowoczesnych trendów, a naszym priorytetem jest zrozumienie potrzeb Klienta, by tworzyć przestrzenie, w których chce się przebywać.",
-    "HomeButtonOffer":"Sprawdź ofertę"
+  "Zapytanietxt1": "Formularz zapytania pozwoli",
+  "Zapytanietxt2": "w kilku prostych krokach",
+  "Zapytanietxt3": "zebrać najważniejsze informacje na temat Twoich potrzeb. Dzięki temu",
+  "Zapytanietxt4": " szybko",
+  "Zapytanietxt5": "przygotujemy dla Ciebie ofertę",
+
+  "Karieratxt": " Cały czas szukamy nowych talentów do naszego zespołu.Chcesz spróbować? Aplikuj !",
+
+  "Kontakttxt": "Nasz zespół pozostaje do Twojej dyspozycji, skontaktuj się z nami a znajdziemy idealne rozwiązanie.",
+
+  "HomeHeaderTextP": "Projekt",
+  "HomeHeaderTextR": "Realizacja",
+  "HomeHeaderTextW": "Wnetrz",
+  "HomeWprowadzenie": "TO DLA NAS WAŻNE",
+  "HomeHeadline": "Dbamy, aby nasze wnętrza były nie tylko piękne, ale przede wszystkim przemyślane i funkcjonalne.",
+  "HomeText": "Realizujemy projekty zarówno mieszkalne, jak i biurowe. Cenimy oryginalność, wykorzystanie nowoczesnych trendów, a naszym priorytetem jest zrozumienie potrzeb Klienta, by tworzyć przestrzenie, w których chce się przebywać.",
+  "HomeButtonOffer": "Sprawdź ofertę",
+  "HomeIntroductionSelected": "WYBRANE",
+  "HomeIntroductionSelectedRealizations": "Realizacje",
+  "HomeGalleryButtonText": "Więcej realizacji",
+
+  "OfferArticleLeftHeadline": "Projektujemy",
+  "OfferArticleRightHeadline": "Realizacujemy",
+
+  "RealizationSectionIntroduction": "Projekty",
+  "RealizationButtonAll": "Wszystkie",
+  "RealizationButtonPrivate": "Prywatne",
+  "RealizationButtonCommercial": "Komercyjne",
+
+  "TeamSectionIntroduction": "Poznaj Nas",
+  "TeamSectionHeadLine": "Architekci i Projektanci",
+  "TeamSectionText": "Wybierz swojego specjalistę",
+
+  "ContactFormBoxTitle": "Zostaw wiadomość",
+  "ContactFormBoxText": "Czekamy na Twoją wiadomość.",
+  "ContactFormInputName": "Imię i Nazwisko",
+  "ContactFormInputPhone": "Telefon",
+  "ContactFormInputMessage": "Wiadomość",
+  "ContactFormButton": "Wyślij",
+  "ContactTitleAdress": "Adres pracowni",
+  "RegisterInformationTitle": "Dane rejestrowe",
+
+  "MapPopup": "Tutaj Jesteśmy!"
 }

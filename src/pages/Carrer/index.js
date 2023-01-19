@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import {
   CarrerHeader,
   CarrerHeaderLeftContainer,
@@ -14,19 +15,15 @@ import {
 import Occupations from './CarrerOccupations'
 import img7 from '../../images/img7.jpg'
 
-const Carrer = () => {
+const Carrer = (props) => {
+  const { t } = useTranslation()
   return (
     <>
       <CarrerHeader>
         <CarrerHeaderLeftContainer>
-          <CarrerHeaderLetter>K</CarrerHeaderLetter>
-          <CarrerHeaderIntroduction>Kariera</CarrerHeaderIntroduction>
-          <CarrerHeaderText>
-            {' '}
-            W dalszym ciągu szukamy nowych talentów do naszego zespołu. Jeśli chcesz spróbować
-            swoich sił,<br></br>
-            Aplikuj!
-          </CarrerHeaderText>
+          <CarrerHeaderLetter>{t('LiteraKariera')}</CarrerHeaderLetter>
+          <CarrerHeaderIntroduction>{t('Kariera')}</CarrerHeaderIntroduction>
+          <CarrerHeaderText> {t('Karieratxt')}</CarrerHeaderText>
         </CarrerHeaderLeftContainer>
 
         <CarrerHeaderRightContainer>
