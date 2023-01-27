@@ -108,13 +108,11 @@ const CustomizedSteppers = () => {
                   boxSizing: 'border-box',
                   margin: 0,
                   width: { xxs: '100%', sm: '40vw' },
-                  height: { xxs: 'auto', md: '25vh' },
+                  height: { xxs: 'auto', sm: '25vh' },
                   border: 'none',
                   display: 'flex',
                   alignItems: { xxs: 'center' },
                   justifyContent: { xxs: 'center', sm: 'flex-start' },
-                  // backgroundColor: 'violet',
-                  // overflow: "hidden",
                 }}
               >
                 <Box
@@ -123,7 +121,6 @@ const CustomizedSteppers = () => {
                     width: { xxs: '100%', sm: '50%' },
                     boxSizing: 'border-box',
                     display: 'flex',
-                    // backgroundColor: 'pink',
                   }}
                 >
                   <Typography

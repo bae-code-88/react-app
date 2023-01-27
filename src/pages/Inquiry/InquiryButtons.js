@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography'
 const CssTextField = styled(TextField)({
   '& label.Mui-focused': {
     color: ' #a85f3f',
-    marginTop: '10px',
+    marginTop: '20px',
   },
   '& .MuiInput-underline:after': {
     borderBottomColor: ' #a85f3f',
@@ -18,8 +18,8 @@ const CssTextField = styled(TextField)({
     '& fieldset': {
       borderColor: ' #a85f3f',
       borderRadius: '0px',
-      height: '50px',
-      lineHeight: '30px',
+      height: '45px',
+      lineHeight: '20px',
       fontSize: '14px',
       marginTop: '20px',
     },
@@ -60,11 +60,12 @@ const InquiryButtons = ({
             handleNext()
           }}
           sx={{
+            mt: 1,
             mr: 1,
             color: '#a85f3f',
             border: '1px solid #a85f3f',
             borderRadius: '0',
-            width: { xxs: '120px', sm: '20%', md: '190px' },
+            width: { xxs: '120px', sm: '30%', md: '190px' },
             lineHeight: '25px',
             backgroundColor: 'transparent',
             fontFamily: 'Usual',
@@ -91,14 +92,13 @@ const InquiryButtons = ({
           flexDirection: 'column',
           alignContent: { xxs: 'center', sm: 'flex-start' },
           justifyContent: { xxs: 'center' },
-          // backgroundColor: "gray",
         }}
       >
         <Typography
           sx={{
             fontFamily: 'Usual',
             fontSize: '30px',
-            textAlign: { xxs: 'center', md: 'left' },
+            textAlign: { xxs: 'center', sm: 'left', md: 'left' },
           }}
         >
           {step.description}*
@@ -122,7 +122,7 @@ const InquiryButtons = ({
               sx={{
                 mb: 1,
                 width: { xxs: '100%' },
-                textAlign: { xxs: 'center', md: 'left' },
+                textAlign: { xxs: 'center', sm: 'left' },
               }}
             >
               <CssTextField
@@ -152,8 +152,8 @@ const InquiryButtons = ({
                 rows={2}
                 cols={8}
                 sx={{
-                  width: '50%',
-                  // mt: 3,
+                  width: { xxs: '80vw', sm: '50vw' },
+                  mr: 1,
                 }}
               />
             </Box>
@@ -172,7 +172,9 @@ const InquiryButtons = ({
                 activestep={activeStep}
                 onChange={handleChange}
                 sx={{
-                  width: { xxs: '120px', sm: '20%', md: '190px' },
+                  mr: 1,
+                  mt: 0,
+                  width: { xxs: '120px', sm: '20vw', md: '190px' },
                   textAlign: { xxs: 'center', md: 'left' },
                 }}
               />
@@ -191,7 +193,10 @@ const InquiryButtons = ({
                 maxRows={1}
                 value={value}
                 onChange={handleChange}
-                sx={{ width: '190px' }}
+                sx={{
+                  mr: 1,
+                  width: { xxs: '120px', sm: '20vw', md: '190px' },
+                }}
               />
             </div>
           ) : null}
@@ -201,18 +206,17 @@ const InquiryButtons = ({
               activestep={activeStep}
               onClick={handleBack}
               sx={{
-                // mr: 1,
+                mr: 1,
                 mt: 1,
                 color: '#a85f3f',
                 border: '1px solid #a85f3f',
                 borderRadius: '0',
-                width: { xxs: '20%', md: '190px' },
+                width: { xxs: '120px', sm: '20%', md: '190px' },
                 lineHeight: '25px',
                 backgroundColor: 'transparent',
                 fontFamily: 'Usual',
                 fontSize: '14px',
                 textTransform: 'none',
-                display: 'block',
               }}
             >
               Wróć

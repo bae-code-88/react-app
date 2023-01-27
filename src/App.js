@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer'
 import { withTranslation } from 'react-i18next'
 
 import './App.css'
+import ScrollToTop from './ScrollToTop'
 
 function App({ t }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,6 +21,7 @@ function App({ t }) {
   const handleScroll = () => {
     setScrollY(window.pageYOffset)
   }
+
   useEffect(() => {
     function watchScroll() {
       window.addEventListener('scroll', handleScroll)
@@ -32,6 +34,7 @@ function App({ t }) {
 
   return (
     <Router>
+      <ScrollToTop />
       {<Navigation toggle={toggleOpen} windowScroll={handleScroll} scrollY={scrollY} t={t} />}
 
       {<Sidebar isOpen={isOpen} toggle={toggleOpen} t={t} />}

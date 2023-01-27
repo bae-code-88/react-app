@@ -13,8 +13,9 @@ const Inquiry = (props) => {
         sx={{
           flexDirection: { xxs: 'column', md: 'row' },
           alignItems: 'center',
+          justifyContennt: 'center',
           position: 'absolute',
-          top: { xxs: '20vh', xs: '15vh', md: '10vh' },
+          top: { xxs: '20vh', xs: '15vh', sm: '10vh', md: '10vh' },
           left: '0',
           overflow: 'hidden',
         }}
