@@ -9,6 +9,7 @@ const InquiryFinishedSteps = ({ activeStep, handleReset, steps }) => {
   return (
     <>
       {activeStep === steps.length + 1 && (
+        
         <Paper square elevation={0} sx={{ p: 3, width: '100%' }}>
           <Box
             sx={{

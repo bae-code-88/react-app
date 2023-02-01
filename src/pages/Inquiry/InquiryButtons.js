@@ -154,6 +154,7 @@ const InquiryButtons = ({
                 sx={{
                   width: { xxs: '80vw', sm: '50vw' },
                   mr: 1,
+                  mt: 0,
                 }}
               />
             </Box>

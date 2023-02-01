@@ -47,17 +47,31 @@ const CustomizedSteppers = () => {
   const [stepType, setStepType] = React.useState()
 
   const handleNext = () => {
+    const position = window.pageYOffset
     setActiveStep((prevActiveStep) => prevActiveStep + 1)
     console.log(activeStep)
+    window.scrollTo({
+      top: `${position + 200}`,
+      behavior: 'smooth',
+    })
   }
 
   const handleBack = () => {
+    const position = window.pageYOffset
     setActiveStep((prevActiveStep) => prevActiveStep - 1)
     console.log(activeStep)
+    window.scrollTo({
+      top: `${position - 200}`,
+      behavior: 'smooth',
+    })
   }
 
   const handleReset = () => {
     setActiveStep(1)
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
     console.log(activeStep)
   }
 
@@ -95,7 +109,6 @@ const CustomizedSteppers = () => {
                 width: '80vw',
                 marginTop: { xxs: '0px', sm: '10px' },
                 marginLeft: { xxs: '0px', sm: '0px' },
-                // backgroundColor: 'green',
               }}
             >
               <InquiryStepLabel step={step} id={id} />
